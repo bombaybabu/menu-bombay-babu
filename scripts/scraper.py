@@ -123,13 +123,14 @@ def run():
         page = context.new_page()
 
         log(f"Abriendo {config.DELIVERY_PAGE_URL}")
-        page.goto(config.DELIVERY_PAGE_URL, wait_until="networkidle", timeout=60000)
+        page.goto(config.DELIVERY_PAGE_URL, wait_until="load", timeout=45000)
+        page.wait_for_timeout(2000)
 
         # Pulsa el primer botón "Click here" que encuentre (primer restaurante listado).
         with context.expect_page(timeout=15000) as new_page_info:
             page.get_by_text(config.CLICK_HERE_TEXT, exact=True).first.click()
         portal_page = new_page_info.value
-        portal_page.wait_for_load_state("networkidle", timeout=30000)
+        portal_page.wait_for_load_state("load", timeout=30000)
         log(f"PortalRest abierto: {portal_page.url}")
 
         # Espera a que carguen las categorías iniciales.
