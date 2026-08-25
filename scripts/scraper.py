@@ -113,7 +113,7 @@ def run():
 
         log(f"Abriendo {config.PORTALREST_DIRECT_URL}")
         page.goto(config.PORTALREST_DIRECT_URL, wait_until="load", timeout=60000)
-        page.wait_for_timeout(4000)
+        page.wait_for_timeout(15000)
 
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1_when.png"))
