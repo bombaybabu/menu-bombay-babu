@@ -24,10 +24,12 @@ def main():
         items_today = scraper.run()
     except Exception as e:
         print(f"[main] ERROR en el scraping: {e}", file=sys.stderr)
+        _signal_debug_files()
         sys.exit(1)
 
     if not items_today:
         print("[main] Scraper no devolvió items, no se hace nada.", file=sys.stderr)
+        _signal_debug_files()
         sys.exit(1)
 
     has_changes, summary = differ.diff()
@@ -41,9 +43,12 @@ def main():
             print("[main] index.html regenerado correctamente.")
         except Exception as e:
             print(f"[main] ERROR regenerando index.html: {e}", file=sys.stderr)
+            _signal_debug_files()
             sys.exit(1)
     else:
         print("[main] Sin cambios respecto a la última revisión.")
+
+    _signal_debug_files()
 
     # Rota el snapshot para la próxima comparación
     if os.path.exists(config.TODAY_SNAPSHOT):
@@ -52,6 +57,14 @@ def main():
     # Señal para el workflow: si hubo cambios, imprime marcador en stdout
     if has_changes:
         print("::MENU_CHANGED::")
+
+
+def _signal_debug_files():
+    """Si DEBUG_MODE generó capturas (ya están en scripts/debug/, dentro del
+    repo), imprime un marcador para que el workflow las incluya en el commit
+    y así puedan verse vía raw.githubusercontent.com."""
+    if config.DEBUG_MODE and os.path.isdir(config.DEBUG_DIR) and os.listdir(config.DEBUG_DIR):
+        print("::DEBUG_FILES_READY::")
 
 
 if __name__ == "__main__":
