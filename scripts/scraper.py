@@ -112,16 +112,18 @@ def run():
         page = context.new_page()
 
         log(f"Abriendo {config.PORTALREST_DIRECT_URL}")
-        page.goto(config.PORTALREST_DIRECT_URL, wait_until="load", timeout=45000)
-        page.wait_for_timeout(2000)
+        page.goto(config.PORTALREST_DIRECT_URL, wait_until="load", timeout=60000)
+        page.wait_for_timeout(4000)
 
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1_when.png"))
+            with open(os.path.join(config.DEBUG_DIR, "step1_when.html"), "w") as f:
+                f.write(page.content())
 
         # Pantalla "¿Para cuándo?" -> "Ahora"
-        page.get_by_text("Ahora", exact=True).first.wait_for(state="visible", timeout=20000)
+        page.get_by_text("Ahora", exact=True).first.wait_for(state="visible", timeout=40000)
         page.get_by_text("Ahora", exact=True).first.click()
-        page.wait_for_timeout(1500)
+        page.wait_for_timeout(2000)
 
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step2_how.png"))
