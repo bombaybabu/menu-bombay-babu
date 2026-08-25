@@ -124,11 +124,19 @@ def run():
 
         log(f"Abriendo {config.DELIVERY_PAGE_URL}")
         page.goto(config.DELIVERY_PAGE_URL, wait_until="load", timeout=45000)
-        page.wait_for_timeout(2000)
+        page.wait_for_timeout(3000)
+
+        if config.DEBUG_MODE:
+            page.screenshot(path=os.path.join(config.DEBUG_DIR, "delivery_page.png"))
+            with open(os.path.join(config.DEBUG_DIR, "delivery_page.html"), "w") as f:
+                f.write(page.content())
+
+        click_button = page.get_by_text(config.CLICK_HERE_TEXT, exact=True).first
+        click_button.wait_for(state="visible", timeout=20000)
 
         # Pulsa el primer botón "Click here" que encuentre (primer restaurante listado).
-        with context.expect_page(timeout=15000) as new_page_info:
-            page.get_by_text(config.CLICK_HERE_TEXT, exact=True).first.click()
+        with context.expect_page(timeout=30000) as new_page_info:
+            click_button.click()
         portal_page = new_page_info.value
         portal_page.wait_for_load_state("load", timeout=30000)
         log(f"PortalRest abierto: {portal_page.url}")
