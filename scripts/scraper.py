@@ -1,10 +1,13 @@
 """
 Extrae la carta completa de Bombay Babu desde la app PortalRest (hiopos).
 
-La carta NO se puede abrir accediendo directamente a la URL de PortalRest:
-hay que pasar primero por bombay-babu.com/delivery-pr/ y pulsar el botón
-"Click here" del restaurante, que abre PortalRest en una pestaña nueva con
-los parámetros de sesión correctos.
+Se accede mediante un enlace directo de portalrest.com que, con solo 2 clics
+en la MISMA pestaña, aterriza en la carta — sin necesidad de pasar por
+bombay-babu.com/delivery-pr/ ni de abrir una pestaña nueva:
+  1. https://www.portalrest.com/index.html?data=... (URL fija, ver config.py)
+  2. Pantalla "¿Para cuándo?" → clic en "Ahora"
+  3. Pantalla "¿Cómo?" → clic en "A recoger en local"
+  4. Aterriza en la carta (shop-letter/<id1>/<id2>)
 
 Dentro de PortalRest, la lista de platos está virtualizada: solo el tramo
 visible existe en el DOM en cada momento, así que hay que hacer scroll
@@ -17,7 +20,6 @@ import json
 import os
 import re
 import sys
-import time
 
 from playwright.sync_api import sync_playwright
 
@@ -26,19 +28,6 @@ import config
 
 def log(msg):
     print(f"[scraper] {msg}", flush=True)
-
-
-def extract_visible_items(page):
-    """Lee del DOM los pares nombre/precio/descripción actualmente renderizados."""
-    return page.evaluate("""
-        () => {
-            const rows = [];
-            // Cada plato es un bloque con nombre en negrita, precio a la derecha,
-            // y descripción opcional debajo. Estructura observada en PortalRest.
-            document.querySelectorAll('body *').forEach(el => {});
-            return rows;
-        }
-    """)
 
 
 def scrape_category_text(page):
@@ -122,30 +111,32 @@ def run():
         context = browser.new_context(viewport={"width": 500, "height": 900})
         page = context.new_page()
 
-        log(f"Abriendo {config.DELIVERY_PAGE_URL}")
-        page.goto(config.DELIVERY_PAGE_URL, wait_until="load", timeout=45000)
-        page.wait_for_timeout(3000)
+        log(f"Abriendo {config.PORTALREST_DIRECT_URL}")
+        page.goto(config.PORTALREST_DIRECT_URL, wait_until="load", timeout=45000)
+        page.wait_for_timeout(2000)
 
         if config.DEBUG_MODE:
-            page.screenshot(path=os.path.join(config.DEBUG_DIR, "delivery_page.png"))
-            with open(os.path.join(config.DEBUG_DIR, "delivery_page.html"), "w") as f:
+            page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1_when.png"))
+
+        # Pantalla "¿Para cuándo?" -> "Ahora"
+        page.get_by_text("Ahora", exact=True).first.wait_for(state="visible", timeout=20000)
+        page.get_by_text("Ahora", exact=True).first.click()
+        page.wait_for_timeout(1500)
+
+        if config.DEBUG_MODE:
+            page.screenshot(path=os.path.join(config.DEBUG_DIR, "step2_how.png"))
+
+        # Pantalla "¿Cómo?" -> "A recoger en local"
+        page.get_by_text("A recoger en local", exact=True).first.wait_for(state="visible", timeout=20000)
+        page.get_by_text("A recoger en local", exact=True).first.click()
+        page.wait_for_timeout(2500)
+
+        if config.DEBUG_MODE:
+            page.screenshot(path=os.path.join(config.DEBUG_DIR, "step3_menu.png"))
+            with open(os.path.join(config.DEBUG_DIR, "step3_menu.html"), "w") as f:
                 f.write(page.content())
 
-        click_button = page.get_by_text(config.CLICK_HERE_TEXT, exact=True).first
-        click_button.wait_for(state="visible", timeout=20000)
-
-        # Pulsa el primer botón "Click here" que encuentre (primer restaurante listado).
-        with context.expect_page(timeout=30000) as new_page_info:
-            click_button.click()
-        portal_page = new_page_info.value
-        portal_page.wait_for_load_state("load", timeout=30000)
-        log(f"PortalRest abierto: {portal_page.url}")
-
-        # Espera a que carguen las categorías iniciales.
-        portal_page.wait_for_timeout(3000)
-
-        if config.DEBUG_MODE:
-            portal_page.screenshot(path=os.path.join(config.DEBUG_DIR, "loaded.png"))
+        log(f"Carta cargada: {page.url}")
 
         # Scroll incremental por toda la carta, capturando texto en cada paso.
         seen_snippets = set()
@@ -155,15 +146,15 @@ def run():
         max_rounds = 400
 
         for round_i in range(max_rounds):
-            text = scrape_category_text(portal_page)
+            text = scrape_category_text(page)
             if text not in seen_snippets:
                 raw_chunks.append(text)
                 seen_snippets.add(text)
 
-            portal_page.mouse.wheel(0, 700)
-            portal_page.wait_for_timeout(250)
+            page.mouse.wheel(0, 700)
+            page.wait_for_timeout(250)
 
-            height = portal_page.evaluate("document.body.scrollHeight")
+            height = page.evaluate("document.body.scrollHeight")
             if height == last_height:
                 stable_rounds += 1
             else:
@@ -203,3 +194,4 @@ if __name__ == "__main__":
     if not items:
         log("ADVERTENCIA: no se extrajo ningún item. Revisa el modo DEBUG_MODE=true.")
         sys.exit(1)
+
