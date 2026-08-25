@@ -113,16 +113,43 @@ def run():
 
         log(f"Abriendo {config.PORTALREST_DIRECT_URL}")
         page.goto(config.PORTALREST_DIRECT_URL, wait_until="load", timeout=60000)
-        page.wait_for_timeout(15000)
+        page.wait_for_timeout(3000)
 
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1_when.png"))
             with open(os.path.join(config.DEBUG_DIR, "step1_when.html"), "w") as f:
                 f.write(page.content())
 
-        # Pantalla "¿Para cuándo?" -> "Ahora"
-        page.get_by_text("Ahora", exact=True).first.wait_for(state="visible", timeout=40000)
-        page.get_by_text("Ahora", exact=True).first.click()
+        # Banner de cookies (si aparece): aceptar para no bloquear los clics siguientes.
+        try:
+            page.get_by_text("Ok", exact=True).first.click(timeout=5000)
+            page.wait_for_timeout(500)
+        except Exception:
+            pass  # No había banner de cookies
+
+        # Pantalla "¿Para cuándo?": si el restaurante está abierto aparece "Ahora";
+        # si está cerrado, solo aparece "Seleccionar día y hora" y hay que elegir
+        # manualmente el primer horario disponible.
+        ahora_btn = page.get_by_text("Ahora", exact=True).first
+        try:
+            ahora_btn.wait_for(state="visible", timeout=15000)
+            ahora_btn.click()
+        except Exception:
+            log("Restaurante cerrado: seleccionando día/hora manualmente")
+            page.get_by_text("Seleccionar día y hora", exact=True).first.click()
+            page.wait_for_timeout(1500)
+            if config.DEBUG_MODE:
+                page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b_datetime.png"))
+            # Selecciona el primer día y la primera hora disponibles en la lista.
+            page.locator("text=/^\\d{1,2}:\\d{2}$/").first.click(timeout=10000)
+            page.wait_for_timeout(500)
+            # Confirma la selección si hay un botón de continuar/aceptar.
+            for label in ["Continuar", "Aceptar", "Confirmar", "Ok"]:
+                try:
+                    page.get_by_text(label, exact=True).first.click(timeout=2000)
+                    break
+                except Exception:
+                    continue
         page.wait_for_timeout(2000)
 
         if config.DEBUG_MODE:
