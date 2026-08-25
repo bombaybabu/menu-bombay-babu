@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bombay Babu — Carta</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root{
+  --bg:#7a1a5a;
+  --accent:#c0003c;
+  --panel-orange:rgba(210, 85, 30, 0.94);
+  --panel-magenta:rgba(180, 30, 100, 0.94);
+  --panel-yellow:#c8962a;
+  --panel-green:#5a8a28;
+  --panel-blue:#1f6b8a;
+  --panel-red:#c13c3c;
+  --text:#fff;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x:hidden;
+}
+
+a, a:hover, a:visited, a:active{ text-decoration:none !important; }
+a{ transition: color .2s ease, background-color .2s ease, opacity .2s ease; }
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  width:100%;
+  min-height:310px;
+  overflow:visible;
+  padding-top:12px;
+}
+.hero-reserve-badge{
+  position:absolute;
+  top:-25px; left:50%;
+  transform:translateX(-50%);
+  width:68px; height:68px;
+  background:var(--accent);
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; z-index:3;
+}
+.hero-reserve-badge span{
+  font-size:8.5px; font-weight:bold; letter-spacing:.1em;
+  text-transform:uppercase; color:#fff; line-height:1.3;
+}
+.hero-reserve-badge:hover{ background:#fff; }
+.hero-reserve-badge:hover span{ color:#000; }
+
+.hero-panels{
+  position:absolute; bottom:0; left:50%;
+  transform:translateX(-50%);
+  display:flex; width:760px; max-width:100%; z-index:2;
+}
+.panel-orange, .panel-magenta{ position:relative; overflow:hidden; }
+
+.panel-orange{
+  background:var(--panel-orange);
+  flex:1.6;
+  padding:28px 30px 24px;
+}
+.panel-orange::after{
+  content:''; position:absolute; top:0; right:0;
+  width:60px; height:60px;
+  background:rgba(230,130,40,.4);
+  clip-path:polygon(100% 0, 0 0, 100% 100%);
+}
+.panel-orange > *{ position:relative; z-index:1; }
+.panel-orange .eyebrow{
+  font-size:9px; letter-spacing:.22em; text-transform:uppercase;
+  color:rgba(255,255,255,.78); margin-bottom:10px;
+}
+.panel-orange h1{
+  font-size:21px; font-weight:bold; letter-spacing:.14em;
+  text-transform:uppercase; line-height:1.25; margin-bottom:14px;
+}
+.panel-orange p{
+  font-size:10.5px; line-height:1.65; color:rgba(255,255,255,.92); margin-bottom:8px;
+}
+
+.panel-magenta{
+  background:var(--panel-magenta);
+  flex:.75;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:20px; text-align:center; color:#fff;
+}
+.panel-magenta > *{ position:relative; z-index:1; }
+.panel-magenta:hover{ background:#fff; }
+.panel-magenta:hover .find-us-label, .panel-magenta:hover h2{ color:#000; }
+.panel-magenta .find-us-label{
+  font-size:9px; letter-spacing:.22em; text-transform:uppercase;
+  color:rgba(255,255,255,.78); margin-bottom:10px;
+}
+.panel-magenta .find-us-divider{
+  width:36px; height:1px; background:rgba(255,255,255,.42); margin:0 auto 14px;
+}
+.panel-magenta:hover .find-us-divider{ background:#000; }
+.panel-magenta h2{
+  font-size:15px; font-weight:bold; letter-spacing:.12em; text-transform:uppercase; line-height:1.3;
+}
+
+/* ============ MAIN BODY ============ */
+.main-body{
+  background:var(--bg);
+  background-image:
+    radial-gradient(circle, rgba(120,10,80,.6) 1px, transparent 1px),
+    radial-gradient(circle, rgba(100,5,65,.4) 1px, transparent 1px);
+  background-size:40px 40px, 20px 20px;
+  background-position:0 0, 10px 10px;
+}
+
+.section{ padding:36px 20px 0; max-width:1200px; margin:0 auto; }
+
+.section-heading{
+  text-align:center; font-size:15px; font-weight:normal; letter-spacing:.25em;
+  text-transform:uppercase; color:#fff; margin-bottom:10px;
+}
+.section-underline{
+  width:120px; height:1px; background:rgba(255,255,255,.35); margin:0 auto 22px;
+}
+
+/* ============ CATEGORY GRID ============ */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-auto-rows:170px;
+  width:100%;
+  gap:0;
+}
+
+.card{
+  position:relative; overflow:hidden; cursor:pointer;
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:16px 18px; color:#fff;
+  transition: background-color .2s ease, color .2s ease;
+  border:none; text-align:left; font-family:inherit;
+}
+.card > *{ position:relative; z-index:1; }
+.card:hover{ background:#fff !important; color:#000 !important; }
+.card:hover .title, .card:hover .subtitle, .card:hover .tag{ color:#000; }
+
+.tag{
+  font-size:8px; letter-spacing:.18em; text-transform:uppercase;
+  color:rgba(255,255,255,.85); margin-bottom:8px; font-weight:bold;
+}
+.title{
+  font-size:16px; font-weight:bold; letter-spacing:.06em;
+  text-transform:uppercase; line-height:1.2;
+}
+.subtitle{
+  margin-top:8px; font-size:10px; letter-spacing:.08em;
+  line-height:1.5; color:rgba(255,255,255,.85);
+}
+
+.yellow{ background:var(--panel-yellow); }
+.green{ background:var(--panel-green); }
+.blue{ background:var(--panel-blue); }
+.red{ background:var(--panel-red); }
+.orange{ background:#d05a18; }
+.magenta{ background:#b81868; }
+
+.footer-space{ height:48px; }
+
+/* ============ CATEGORY DETAIL ============ */
+.menu-detail{
+  display:none;
+  max-width:900px;
+  margin:0 auto;
+  padding:0 20px 60px;
+}
+.menu-detail.active{ display:block; }
+.grid-wrap.hidden{ display:none; }
+
+.back-btn{
+  display:inline-flex; align-items:center; gap:8px;
+  background:none; border:none; color:#fff; cursor:pointer;
+  font-family:inherit; font-size:11px; letter-spacing:.15em;
+  text-transform:uppercase; margin-bottom:24px; opacity:.85;
+  padding:0;
+}
+.back-btn:hover{ opacity:1; text-decoration:underline !important; }
+
+.detail-heading{
+  display:flex; align-items:center; gap:14px;
+  margin-bottom:6px;
+}
+.detail-tag{
+  font-size:10px; letter-spacing:.22em; text-transform:uppercase;
+  padding:4px 10px; border-radius:2px; font-weight:bold;
+}
+.detail-title{
+  font-size:26px; font-weight:bold; letter-spacing:.06em; text-transform:uppercase;
+}
+.detail-underline{
+  width:60px; height:2px; margin:14px 0 28px;
+}
+
+.protein-box{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:6px;
+  padding:16px 20px;
+  margin-bottom:28px;
+}
+.protein-box h3{
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  margin-bottom:12px; color:rgba(255,255,255,.85);
+}
+.protein-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:6px 24px;
+  font-size:12.5px;
+}
+.protein-grid span{ color:rgba(255,255,255,.7); }
+.protein-grid b{ float:right; color:#fff; }
+.protein-note{
+  font-size:11px; color:rgba(255,255,255,.6); margin-top:12px; line-height:1.5;
+}
+
+.dish{
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:16px; padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.dish:last-child{ border-bottom:none; }
+.dish-name{
+  font-size:14.5px; font-weight:bold; letter-spacing:.02em;
+}
+.dish-desc{
+  font-size:12px; color:rgba(255,255,255,.65); margin-top:4px; line-height:1.5;
+  max-width:520px;
+}
+.dish-price{
+  font-size:14.5px; font-weight:bold; white-space:nowrap; padding-left:12px;
+}
+.dish-price.from::before{ content:'desde '; font-weight:normal; font-size:11px; color:rgba(255,255,255,.6); }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px){
+  .grid{ grid-template-columns:1fr 1fr; }
+  .span-2, .span-3, .tall-2{ grid-column:span 1; grid-row:span 1; }
+}
+@media (max-width: 768px){
+  .hero{ min-height:auto; }
+  .hero-panels{
+    position:relative; left:auto; bottom:auto; transform:none;
+    width:100%; flex-direction:column;
+  }
+  .panel-orange, .panel-magenta{ width:100%; }
+  .grid{ grid-template-columns:1fr; grid-auto-rows:150px; }
+  .dish{ flex-direction:column; }
+  .dish-price{ padding-left:0; }
+  .protein-grid{ grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <a href="/es/reservas/" class="hero-reserve-badge">
+    <span>BOOK<br>NOW</span>
+  </a>
+  <div class="hero-panels">
+    <div class="panel-orange">
+      <div class="eyebrow">The Menu</div>
+      <h1>A Culinary Journey Through India</h1>
+      <p>Descubre nuestra carta completa: entrantes, curries clásicos, especialidades del tandoor y mucho más — cocinados con recetas familiares desde 2010.</p>
+    </div>
+    <a href="/es/reservas/" class="panel-magenta">
+      <div class="find-us-label">Book Now</div>
+      <div class="find-us-divider"></div>
+      <h2>Locations<br>&amp; Hours</h2>
+    </a>
+  </div>
+</div>
+
+<div class="main-body">
+  <section class="section">
+    <h2 class="section-heading">Nuestra Carta</h2>
+    <div class="section-underline"></div>
+
+    <div class="grid grid-wrap" id="category-grid"></div>
+  </section>
+
+  <section class="menu-detail" id="menu-detail">
+    <div class="section" style="padding-top:32px;">
+      <button class="back-btn" onclick="closeCategory()">&larr; Volver a la carta</button>
+      <div class="detail-heading">
+        <span class="detail-tag" id="detail-tag"></span>
+      </div>
+      <div class="detail-title" id="detail-title"></div>
+      <div class="detail-underline" id="detail-underline"></div>
+      <div id="detail-protein"></div>
+      <div id="detail-items"></div>
+    </div>
+  </section>
+
+  <div class="footer-space"></div>
+</div>
+
+<script>
+const COLORS = ['yellow','green','blue','red','orange','magenta'];
+
+const PROTEIN_CURRY = [
+  ['Verduras Mixtas','+12,90€'],['Filetes de Pescado','+12,90€'],
+  ['Pollo','+13,50€'],['Pollo Tikka','+14,50€'],
+  ['Cordero','+14,50€'],['Cordero Tikka','+15,50€'],
+  ['Gambas','+15,50€'],['Paneer Queso Tikka','+16,50€'],
+  ['Langostinos','+16,90€'],['Carne de Soja','+16,90€'],
+  ['Bombay Babu Special','+17,50€'],['Solo Salsa','+5,50€']
+];
+const PROTEIN_BIRYANI = [
+  ['Verduras Mixtas','+13,90€'],['Filetes de Pescado','+13,90€'],
+  ['Pollo','+14,50€'],['Pollo Tikka','+15,50€'],
+  ['Cordero','+15,50€'],['Cordero Tikka','+16,50€'],
+  ['Gambas','+16,50€'],['Paneer Queso Tikka','+17,50€'],
+  ['Langostinos','+17,90€'],['Carne de Soja','+17,90€'],
+  ['Bombay Babu Special','+18,50€']
+];
+
+const CATEGORIES = [
+  {
+    id:'aperitivos', tag:'Starters', title:'Aperitivos', sub:'Para picar y compartir',
+    items:[
+      ['Papadum','1,20€','Un pan muy fino, pero crujiente tras la fritura. Se recomienda el Pickle Tray de salsas para mojar'],
+      ['Spicy Papadum','1,20€','Un pan fino y crujiente mas picante y hecho en el tandoor no frito'],
+      ['Pickle Tray','3,90€','Tres bols con Mango chutney, salsa de Menta con yogur y cebollas picadas con pepino y tomate'],
+      ['Salsa de Tamarindo','1,50€','Salsa agridulce a base del fruto del Tamarindo'],
+      ['Hot & Spicy Garlic Sauce','1,50€','Salsa de ajo picante a base de mayonesa'],
+      ['Chilli Sauce','1,50€','Salsa muy picante casera hecha de pimientos frescos y polvo de chili picante'],
+      ['Mango Chutney','1,50€','']
+    ]
+  },
+  {
+    id:'entrantes', tag:'Appetisers', title:'Entrantes', sub:'Del horno de barro y la sartén',
+    items:[
+      ['Onion Bhaji','4,90€','Parecido a buñuelos de cebolla hechos con harina de garbanzos con un toque de especias'],
+      ['Vegetable Samosa','4,90€','Dos empanadillas rellenas de diferentes verduras muy condimentadas y crujientes'],
+      ['Meat Samosa','5,90€','Dos empanadillas rellenas de carne molida, papas y guisantes'],
+      ['Paneer Pakora','5,90€','Queso fresco indio empanado con harina de garbanzos y frito'],
+      ['Vegetable Pakora','4,90€','Bolas de verduras condimentadas en harina de garbanzo frito'],
+      ['Chicken Pakora','5,90€','Bolas de pollo picado con especias en harina de garbanzo frito'],
+      ['Chicken Tikka','6,50€','Trozos de pollo marinado con un toque de comino, cocinados al horno de barro'],
+      ['Lamb Tikka','6,90€','Trozos de cordero marinado con especias, cocinado al horno de barro'],
+      ['Tandoori Chicken','5,90€','Muslos de pollo fresco marinado en yogur de especias y cocinado entero en el horno de barro'],
+      ['Sheekh Kebab','5,90€','Carne molida con mezcla de especias y cocinada al pincho en el horno de barro'],
+      ['Prawn Puri','5,90€','Gambas salteadas con verduras servidas encima de pan fino redondo y recién hecho'],
+      ['Chicken Puri','5,90€','Rebanado de pollo en salsa servido encima de pan fino redondo y recién hecho'],
+      ['Garlic King Prawn','7,90€','Langostinos cocinados con bastante ajo, salsa de especias y aceite'],
+      ['Garlic Chicken','6,50€','Rebanado de pollo cocinado con ajo, jengibre y especias con aceite'],
+      ['Pudina Tikka','6,50€','Pollo marinado en bastante menta puesto en pincho y cocinado en el horno de barro'],
+      ['Barra Kebab','6,50€','Pollo marinado en pasta de nuez de la india y yogur suave, cocinado en el horno de barro']
+    ]
+  },
+  {
+    id:'curry', tag:'Curry House', title:'Curry', sub:'Elige tu salsa, elige tu proteína', priceGroup:'curry',
+    items:[
+      ['Balti','desde','Curry creado en Inglaterra con tomate fresco, pimientos verdes y chili, servido en su bol balti'],
+      ['Bhuna','desde','Cebollas picadas, pimientos verdes y rojos asados, semillas de cilantro, jengibre, ajo y hojas de fenogreco'],
+      ['Butter Masala','desde','Salsa que puede hacerse tan caliente o templada como se quiera, con mantequilla'],
+      ['Chasney','desde','Curry de color rojo con cóctel de frutas agridulce'],
+      ['Curry','desde','El curry clásico: tomates frescos, salsa suave, decorado con cilantro'],
+      ['Dansak','desde','Elementos de cocina persa y gujarati; lentejas, jengibre, ajo y cilantro fresco'],
+      ['Dopiaza','desde','Gran cantidad de cebollas, cocinadas en el curry y como guarnición'],
+      ['Jalfrezi','desde','Distinguido por el chili y sus pimientos verdes y rojos recién cortados'],
+      ['Jay Puri','desde','Champiñones, toque de coco, cebollas, jengibre y cilantro'],
+      ['Karahi','desde','Preparado en sartén de hierro fundido, tomate picado, cebolla, cilantro, jengibre y ajo'],
+      ['Kashmiri Korma','desde','Suave y cremoso, cóctel de frutas, decorado con almendras y coco rallado'],
+      ['Korma','desde','Sabor suave y cremoso, decorado con almendras y coco rallado'],
+      ['Manchuria','desde','Medio picante, con un sabor a menta que refresca'],
+      ['Masala','desde','Sabor suave pero denso, con nata y almendras'],
+      ['Methi','desde','Con hojas de alholva/fenogreco, sabor amargo y propiedades digestivas'],
+      ['Moglai','desde','Más denso, contiene huevo, con ajo, jengibre y cilantro'],
+      ['Pathia','desde','Persa, sabor agridulce, con trozos de mango y coco'],
+      ['Rogan Josh','desde','Aromático de Cachemira: tomates, jengibre, ajo, cilantro y un toque de crema'],
+      ['Saag','desde','Espinacas cocidas con especias en una salsa espesa'],
+      ['Saloni','desde','Sabor medio suave con un toque único de crema de coco']
+    ]
+  },
+  {
+    id:'acompanantes', tag:'Sides', title:'Acompañantes', sub:'Guarniciones de la casa',
+    items:[
+      ['Bombay Aloo','9,90€','Patatas ligeramente fritas y cocinadas en salsa seca con tomate'],
+      ['Aloo Gobi','9,90€','Patatas y coliflor ligeramente fritas en salsa seca con tomate'],
+      ['Saag Aloo','9,90€','Patatas ligeramente fritas con espinacas en salsa seca con tomate'],
+      ['Tarka Dhal','9,90€','Lentejas cocidas en sopa espesa con especias'],
+      ['Dhal Mukhni','9,90€','Lentejas en sopa espesa con especias, servido con mantequilla natural'],
+      ['Chana Masala','9,90€','Garbanzos en salsa suave de tomate y especias'],
+      ['Bhindi Bhaji','9,90€','Okra fresca en salsa suave de tomate con cebolla picada y especias'],
+      ['Mushroom Bhaji','9,90€','Champiñones en salsa suave de tomate con cebolla picada y especias'],
+      ['Aubergine Bhaji','9,90€','Berenjenas en salsa suave de tomate con cebolla picada y especias'],
+      ['Mutter Paneer','9,90€','']
+    ]
+  },
+  {
+    id:'sizzlers', tag:'Sizzling Hot', title:'Sizzlers', sub:'Directos del fuego a tu mesa',
+    items:[
+      ['Chicken Tikka Sizzler','12,90€','Pollo marinado en yogur especiado, horno de barro, con cebolla frita y limón'],
+      ['Lamb Tikka Sizzler','14,90€','Cordero marinado en yogur especiado, con cebolla frita, limón y pimientos rojos'],
+      ['Chicken Tandoori Sizzler','12,90€','Muslos de pollo con hueso marinados en yogur rojo especiado, con cebolla frita y limón'],
+      ['King Prawn Sizzler','16,90€','Langostinos cocinados en sartén con especias y cebollas'],
+      ['Tandoori Mix Grill','18,90€','Combinación de cordero, sheekh kebab, pollo tikka, muslos de pollo y langostinos'],
+      ['Paneer Tikka Sizzler','12,90€','']
+    ],
+    note:'Incluye salsa opcional a elegir (Balti, Bhuna, Butter Masala, Chasney, Curry Sauce...) por +5,50€, o sin salsa.'
+  },
+  {
+    id:'biryani', tag:'Rice & Spice', title:'Biryani', sub:'Elige tu proteína', priceGroup:'biryani',
+    items:[
+      ['Biryani','desde','Arroz Biryani cocinado por separado con salsa de sabor intenso, servida aparte medianamente espesa']
+    ]
+  },
+  {
+    id:'arroz', tag:'Rice', title:'Arroz', sub:'La base perfecta',
+    items:[
+      ['Arroz Pilau','4,90€','Arroz basmati indio de tres colores con cebolla, canela, clavo y hierbas'],
+      ['Arroz Basmati Tradicional','4,50€','Arroz basmati indio blanco con su sabor natural'],
+      ['Arroz con Verduras','5,40€','Arroz basmati con verduras'],
+      ['Mushroom Rice','5,40€','Arroz basmati con champiñones'],
+      ['Arroz con Huevo','5,40€','Arroz basmati con huevo cocinado en el tawa'],
+      ['Arroz Especial','5,90€','Arroz basmati con huevo picante y guisantes'],
+      ['Keema Rice','6,40€','Arroz basmati con carne molida y guisantes'],
+      ['Special Bombay Babu Rice','6,90€','Arroz basmati especial con verduras y gambas'],
+      ['Garlic Rice','5,40€','Arroz basmati con extra de ajo'],
+      ['Coconut Rice','5,90€','Arroz basmati enriquecido con dulce de coco, color naranja'],
+      ['Jeera Rice','5,40€','']
+    ]
+  },
+  {
+    id:'naan', tag:'Tandoor Bread', title:'Naan', sub:'Recién horneado',
+    items:[
+      ['Plain Naan','4,00€','Pan normal sin mantequilla'],
+      ['Garlic Naan','4,50€','Pan con ajo'],
+      ['Peshawari Naan','4,50€','Pan relleno de coco, sultanas y azúcar'],
+      ['Kulcha Naan','4,10€','Pan con pimientos verdes y chili'],
+      ['Onion Naan','4,10€','Pan con cebolla picada'],
+      ['Chilli Coriander Naan','4,30€','Pan con cilantro y chili'],
+      ['Keema Naan','4,90€','Pan con relleno de carne molida'],
+      ['Cheese Naan','4,90€','Pan con relleno de queso gouda'],
+      ['Garlic Chilli Naan','5,00€','Pan con ajo y chili'],
+      ['Butter Naan','4,50€','Pan con mantequilla'],
+      ['Cheese & Garlic Naan','5,40€','Pan con ajo y queso']
+    ]
+  },
+  {
+    id:'panes', tag:'Griddle Bread', title:'Chapatis y Parathas', sub:'Pan al estilo tradicional',
+    items:[
+      ['Plain Chapati','3,00€','Pan fino integral'],
+      ['Butter Chapati','3,20€','Pan fino con mantequilla'],
+      ['Tandoori Roti','3,20€','Pan fino cocinado en el Tandoor'],
+      ['Plain Paratha','3,90€','Pan fino ligeramente más grueso que el chapati'],
+      ['Aloo Paratha','4,50€','Pan fino relleno de papas guisadas y mantequilla'],
+      ['Stuffed Paratha','4,90€','Pan relleno con cebollas, coliflor y mantequilla']
+    ]
+  },
+  {
+    id:'especiales', tag:"Chef's Table", title:'Especiales del Chef', sub:'Creaciones de la casa',
+    items:[
+      ['Tangri Butter Chicken','16,90€','Muslos de pollo al curry, estilo casero, rico y cremoso, toque medio de especias'],
+      ['Malai Kofta','15,90€','Plato vegetariano de paneer y papas en salsa suave y rica'],
+      ['Chili Chicken','16,50€','Toque asiático, salsa de soja marinada con chiles verdes'],
+      ['Mango Chicken','16,50€','Curry aromático dulce con mango en dado y puré'],
+      ['Keema Mutter Masala','15,90€','Carne picada con guisantes al curry, mezcla espesa y picante'],
+      ['Kerala Egg Curry','14,90€','Huevos cocidos en leche de coco con cebolla, ajo, jengibre y masala, decorado con chiles verdes'],
+      ['Chilli Paneer','16,90€','Paneer rebozado y frito con salsa de chile picante y agridulce'],
+      ['Hakka Noodles','15,90€','Noodles estilo indio-chino salteados en wok con especias y verduras']
+    ]
+  },
+  {
+    id:'infantil', tag:'Kids', title:'Menú Infantil', sub:'Para los más pequeños',
+    items:[
+      ['Patatas Fritas','4,25€',''],
+      ['Chicken Nuggets and Chips','7,90€',''],
+      ['Fish Fingers and Chips','7,90€',''],
+      ['Korma de Pollo al Azafrán','7,90€','A elegir con arroz basmati, naan o papas fritas'],
+      ['Pollo Chasney','7,90€','A elegir con arroz basmati, naan o papas fritas'],
+      ['Pollo Kashmiri Korma','7,90€','A elegir con arroz basmati, naan o papas fritas'],
+      ['Dhal Makhni','7,90€','A elegir con arroz basmati, naan o papas fritas'],
+      ['Mutter Paneer','7,90€','A elegir con arroz basmati, naan o papas fritas'],
+      ['Soya Tikka Masala','7,90€','Cubos de soja asados al tandoor con salsa masala, a elegir con arroz basmati, naan o papas fritas'],
+      ['Chicken Tikka Masala (Kids)','7,90€','']
+    ]
+  },
+  {
+    id:'postres', tag:'Desserts', title:'Postres', sub:'El toque dulce final',
+    items:[
+      ['Mixed Kulfi','5,50€',''],
+      ['Bolas de Harina y Leche Fritas en Almíbar','5,00€',''],
+      ['Arroz con Leche Casero al Estilo Hindú','4,75€',''],
+      ['Dos Chocolates/Maracuyá','5,95€','Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho'],
+      ['Cheesecake de Coco con Mango','5,95€','Nata, coco, crujiente de coco, frutas de mango, bizcocho'],
+      ['Cheesecake Classic','5,95€','Nata, crema de queso, mermelada de arándanos, galleta'],
+      ['Kinder Cake','5,95€','Nata, crema de Kinder, crujiente de Kinder, bizcocho'],
+      ['Ferrero sin Azúcar','5,95€','']
+    ]
+  },
+  {
+    id:'bebidas-sin', tag:'Soft Drinks', title:'Bebidas sin Alcohol', sub:'Refrescos y zumos',
+    items:[
+      ['Coca Cola 2 litros','5,00€',''],
+      ['Coca Cola Light 2 litros','5,00€',''],
+      ['Fanta Naranja 2 litros','5,00€',''],
+      ['Fanta Limón 2 litros','5,00€',''],
+      ['Sprite 2 litros','5,00€',''],
+      ['Appletiser','3,20€',''],
+      ['Minute Maid Naranja','3,00€',''],
+      ['Minute Maid Melocotón','3,00€',''],
+      ['Minute Maid Manzana','3,00€',''],
+      ['Pineapple Juice','3,00€',''],
+      ['Mango Juice','3,00€','']
+    ]
+  },
+  {
+    id:'bebidas-con', tag:'Bar', title:'Bebidas con Alcohol', sub:'Cervezas, sidras y vinos',
+    items:[
+      ['Cerveza Cobra','4,00€',''],
+      ['Cerveza Kingfisher','4,00€',''],
+      ['Heineken','3,50€',''],
+      ['Sidra Strongbow','3,90€',''],
+      ['Sidra Kopperberg 50cl','4,25€',''],
+      ['Vino de la Casa Blanca','18,00€',''],
+      ['Vino de la Casa Rosado','18,00€',''],
+      ['Vino Tinto de la Casa','18,00€',''],
+      ['Val Aranda (Ribera del Duero Joven)','22,00€',''],
+      ['Campustauro (Ribera del Duero, Roble)','28,00€',''],
+      ['Luis Gurpegui Muga Crianza (Ribera del Duero, Crianza)','26,90€',''],
+      ['Marqués de Cáceres (Tinto Rioja, Crianza)','24,90€',''],
+      ['Tajinaste (Vino Tinto Canario)','31,90€',''],
+      ['Tajinaste Blanco Seco','27,00€',''],
+      ['Pluma Blanca (Vino Blanco de Rueda)','20,00€',''],
+      ['Viña Sol','22,00€',''],
+      ['Famara (Vino Blanco Seco de Lanzarote)','23,70€',''],
+      ['Mateus Rose','18,50€',''],
+      ['Campustauro Rose','20,00€','']
+    ]
+  },
+  {
+    id:'tarjeta-regalo', tag:'Gift Card', title:'Tarjeta Regalo', sub:'El regalo perfecto',
+    items:[
+      ['Tarjeta Regalo 20€','20,00€',''],
+      ['Tarjeta Regalo 40€','40,00€',''],
+      ['Tarjeta Regalo 60€','60,00€',''],
+      ['Tarjeta Regalo 80€','80,00€',''],
+      ['Tarjeta Regalo 100€','100,00€','']
+    ]
+  }
+];
+
+const grid = document.getElementById('category-grid');
+CATEGORIES.forEach((cat, i) => {
+  const color = COLORS[i % COLORS.length];
+  const btn = document.createElement('button');
+  btn.className = `card ${color}`;
+  btn.onclick = () => openCategory(cat.id);
+  btn.innerHTML = `
+    <div class="tag">${cat.tag}</div>
+    <div class="title">${cat.title}</div>
+    <div class="subtitle">${cat.sub}</div>
+  `;
+  grid.appendChild(btn);
+});
+
+function renderProteinTable(list, groupLabel){
+  const rows = list.map(([name, price]) =>
+    `<div><span>${name}</span><b>${price}</b></div>`
+  ).join('');
+  return `
+    <div class="protein-box">
+      <h3>Elige tu proteína — ${groupLabel}</h3>
+      <div class="protein-grid">${rows}</div>
+      <div class="protein-note">Todos los curries y biryanis incluyen elección de nivel de picante sin coste extra: Suave, Poco Picante, Picante, Muy Picante o Super Picante.</div>
+    </div>
+  `;
+}
+
+function openCategory(id){
+  const cat = CATEGORIES.find(c => c.id === id);
+  const idx = CATEGORIES.indexOf(cat);
+  const color = COLORS[idx % COLORS.length];
+  const colorVarMap = { yellow:'var(--panel-yellow)', green:'var(--panel-green)', blue:'var(--panel-blue)', red:'var(--panel-red)', orange:'#d05a18', magenta:'#b81868' };
+
+  document.getElementById('detail-tag').textContent = cat.tag;
+  document.getElementById('detail-tag').style.background = colorVarMap[color];
+  document.getElementById('detail-tag').style.color = '#fff';
+  document.getElementById('detail-title').textContent = cat.title;
+  document.getElementById('detail-underline').style.background = colorVarMap[color];
+
+  const proteinDiv = document.getElementById('detail-protein');
+  if (cat.priceGroup === 'curry') {
+    proteinDiv.innerHTML = renderProteinTable(PROTEIN_CURRY, 'Curry');
+  } else if (cat.priceGroup === 'biryani') {
+    proteinDiv.innerHTML = renderProteinTable(PROTEIN_BIRYANI, 'Biryani');
+  } else {
+    proteinDiv.innerHTML = '';
+  }
+
+  const itemsDiv = document.getElementById('detail-items');
+  let html = cat.items.map(([name, price, desc]) => {
+    const priceClass = price === 'desde' ? 'dish-price from' : 'dish-price';
+    const priceText = price === 'desde' ? '' : price;
+    return `
+      <div class="dish">
+        <div>
+          <div class="dish-name">${name}</div>
+          ${desc ? `<div class="dish-desc">${desc}</div>` : ''}
+        </div>
+        <div class="${priceClass}">${priceText}</div>
+      </div>
+    `;
+  }).join('');
+  if (cat.note) {
+    html += `<div class="protein-note" style="margin-top:16px;">${cat.note}</div>`;
+  }
+  itemsDiv.innerHTML = html;
+
+  document.getElementById('category-grid').classList.add('hidden');
+  document.querySelector('.section-heading').style.display = 'none';
+  document.querySelector('.section-underline').style.display = 'none';
+  document.getElementById('menu-detail').classList.add('active');
+  window.scrollTo({ top: document.querySelector('.main-body').offsetTop - 20, behavior:'smooth' });
+}
+
+function closeCategory(){
+  document.getElementById('menu-detail').classList.remove('active');
+  document.getElementById('category-grid').classList.remove('hidden');
+  document.querySelector('.section-heading').style.display = '';
+  document.querySelector('.section-underline').style.display = '';
+}
+</script>
+
+</body>
+</html>
