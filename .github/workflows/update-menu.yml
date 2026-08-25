@@ -41,15 +41,21 @@ jobs:
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+          if grep -q "::DEBUG_FILES_READY::" /tmp/monitor_output.log; then
+            echo "debug_ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "debug_ready=false" >> "$GITHUB_OUTPUT"
+          fi
           exit $STATUS
 
-      - name: Subir capturas de depuración si falló
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-artifacts
-          path: scripts/debug/
-          if-no-files-found: ignore
+      - name: Subir capturas de depuración al repo (siempre, éxito o fallo)
+        if: always() && steps.run_monitor.outputs.debug_ready == 'true'
+        run: |
+          git config user.name "bombay-babu-menu-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f scripts/debug/
+          git commit -m "Capturas de depuración ($(date -u +'%Y-%m-%d %H:%M'))" || echo "Nada que commitear"
+          git push || echo "No se pudo hacer push de las capturas"
 
       - name: Commit y push si hubo cambios
         if: steps.run_monitor.outputs.changed == 'true'
