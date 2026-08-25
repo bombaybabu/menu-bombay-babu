@@ -49,13 +49,17 @@ jobs:
           exit $STATUS
 
       - name: Subir capturas de depuración al repo (siempre, éxito o fallo)
-        if: always() && steps.run_monitor.outputs.debug_ready == 'true'
+        if: always()
         run: |
-          git config user.name "bombay-babu-menu-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add -f scripts/debug/
-          git commit -m "Capturas de depuración ($(date -u +'%Y-%m-%d %H:%M'))" || echo "Nada que commitear"
-          git push || echo "No se pudo hacer push de las capturas"
+          if [ -d scripts/debug ] && [ "$(ls -A scripts/debug 2>/dev/null)" ]; then
+            git config user.name "bombay-babu-menu-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add -f scripts/debug/
+            git commit -m "Capturas de depuración ($(date -u +'%Y-%m-%d %H:%M'))" || echo "Nada que commitear"
+            git push || echo "No se pudo hacer push de las capturas"
+          else
+            echo "No hay capturas de depuración que subir."
+          fi
 
       - name: Commit y push si hubo cambios
         if: steps.run_monitor.outputs.changed == 'true'
