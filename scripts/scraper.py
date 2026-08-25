@@ -123,9 +123,12 @@ def run():
         # Banner de cookies (si aparece): aceptar para no bloquear los clics siguientes.
         try:
             page.get_by_text("Ok", exact=True).first.click(timeout=5000)
-            page.wait_for_timeout(500)
+            page.wait_for_timeout(2000)
         except Exception:
             pass  # No había banner de cookies
+
+        if config.DEBUG_MODE:
+            page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1c_after_cookies.png"))
 
         # Pantalla "¿Para cuándo?": si el restaurante está abierto aparece "Ahora";
         # si está cerrado, solo aparece "Seleccionar día y hora" y hay que elegir
