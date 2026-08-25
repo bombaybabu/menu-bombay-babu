@@ -31,13 +31,16 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
+          set -o pipefail
           cd scripts
           python main.py | tee /tmp/monitor_output.log
+          STATUS=$?
           if grep -q "::MENU_CHANGED::" /tmp/monitor_output.log; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+          exit $STATUS
 
       - name: Subir capturas de depuración si falló
         if: failure()
