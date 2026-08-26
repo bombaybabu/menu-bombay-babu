@@ -206,29 +206,28 @@ def run():
         log(f"Carta cargada: {page.url}")
 
         # Scroll incremental por toda la carta, capturando texto en cada paso.
+        # La lista está virtualizada (el DOM solo contiene el tramo visible),
+        # así que document.body.scrollHeight no cambia con el scroll — el
+        # criterio de "fin" es que el texto capturado deje de aportar
+        # contenido nuevo durante varias rondas seguidas.
         seen_snippets = set()
         raw_chunks = []
-        last_height = -1
         stable_rounds = 0
-        max_rounds = 400
+        max_rounds = 500
 
         for round_i in range(max_rounds):
             text = scrape_category_text(page)
             if text not in seen_snippets:
                 raw_chunks.append(text)
                 seen_snippets.add(text)
-
-            page.mouse.wheel(0, 700)
-            page.wait_for_timeout(250)
-
-            height = page.evaluate("document.body.scrollHeight")
-            if height == last_height:
-                stable_rounds += 1
-            else:
                 stable_rounds = 0
-            last_height = height
+            else:
+                stable_rounds += 1
 
-            if stable_rounds > 6:
+            page.mouse.wheel(0, 500)
+            page.wait_for_timeout(300)
+
+            if stable_rounds > 15:
                 log(f"Fin de la carta detectado en el intento {round_i}")
                 break
 
