@@ -189,11 +189,13 @@ def run():
                 page.locator("[class*='calendar'][class*='cell']:not([aria-disabled='true'])").first.click(
                     timeout=5000, force=True
                 )
-            page.wait_for_timeout(1000)
+            page.wait_for_timeout(2000)
             if config.DEBUG_MODE:
                 page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b2_after_day.png"))
             # Ahora sí, selecciona la primera hora disponible en la lista.
-            page.locator("text=/^\\d{1,2}:\\d{2}$/").first.click(timeout=10000, force=True)
+            hora_btn = page.locator("text=/^\\d{1,2}:\\d{2}$/").first
+            hora_btn.scroll_into_view_if_needed(timeout=5000)
+            hora_btn.click(timeout=15000)
             page.wait_for_timeout(500)
             # Confirma la selección si hay un botón de continuar/aceptar.
             for label in ["Continuar", "Continue", "Aceptar", "Accept", "Confirmar", "Confirm", "Ok"]:
