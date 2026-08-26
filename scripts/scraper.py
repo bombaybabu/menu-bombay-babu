@@ -108,7 +108,12 @@ def run():
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(viewport={"width": 500, "height": 900})
+        context = browser.new_context(
+            viewport={"width": 500, "height": 900},
+            locale="es-ES",
+            timezone_id="Atlantic/Canary",
+            extra_http_headers={"Accept-Language": "es-ES,es;q=0.9"},
+        )
         page = context.new_page()
 
         log(f"Abriendo {config.PORTALREST_DIRECT_URL}")
@@ -130,16 +135,19 @@ def run():
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1c_after_cookies.png"))
 
-        # Pantalla "¿Para cuándo?": si el restaurante está abierto aparece "Ahora";
-        # si está cerrado, solo aparece "Seleccionar día y hora" y hay que elegir
-        # manualmente el primer horario disponible.
-        ahora_btn = page.get_by_text("Ahora", exact=True).first
+        # Pantalla "¿Para cuándo?" / "For when?": si el restaurante está abierto
+        # aparece "Ahora"/"Now"; si está cerrado, solo aparece la opción de
+        # seleccionar día y hora manualmente. El idioma puede variar (es/en)
+        # según cómo la app decida el idioma, así que se aceptan ambos.
+        ahora_re = re.compile(r"^(Ahora|Now)$")
+        seleccionar_re = re.compile(r"^(Seleccionar día y hora|Select day and hour)$")
+        ahora_btn = page.get_by_text(ahora_re).first
         try:
             ahora_btn.wait_for(state="visible", timeout=15000)
             ahora_btn.click()
         except Exception:
             log("Restaurante cerrado: seleccionando día/hora manualmente")
-            page.get_by_text("Seleccionar día y hora", exact=True).first.click()
+            page.get_by_text(seleccionar_re).first.click(timeout=15000)
             page.wait_for_timeout(1500)
             if config.DEBUG_MODE:
                 page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b_datetime.png"))
@@ -147,7 +155,7 @@ def run():
             page.locator("text=/^\\d{1,2}:\\d{2}$/").first.click(timeout=10000)
             page.wait_for_timeout(500)
             # Confirma la selección si hay un botón de continuar/aceptar.
-            for label in ["Continuar", "Aceptar", "Confirmar", "Ok"]:
+            for label in ["Continuar", "Continue", "Aceptar", "Accept", "Confirmar", "Confirm", "Ok"]:
                 try:
                     page.get_by_text(label, exact=True).first.click(timeout=2000)
                     break
@@ -158,9 +166,10 @@ def run():
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step2_how.png"))
 
-        # Pantalla "¿Cómo?" -> "A recoger en local"
-        page.get_by_text("A recoger en local", exact=True).first.wait_for(state="visible", timeout=20000)
-        page.get_by_text("A recoger en local", exact=True).first.click()
+        # Pantalla "¿Cómo?" -> "A recoger en local" / "Pick up in store"
+        recoger_re = re.compile(r"^(A recoger en local|Pick up in store|Pickup)$")
+        page.get_by_text(recoger_re).first.wait_for(state="visible", timeout=20000)
+        page.get_by_text(recoger_re).first.click()
         page.wait_for_timeout(2500)
 
         if config.DEBUG_MODE:
