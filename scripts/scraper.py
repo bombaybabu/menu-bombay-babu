@@ -267,12 +267,17 @@ def run():
                 }
             """)
 
+        # page.mouse.wheel debe apuntar sobre el contenedor real; se centra el
+        # ratón sobre la zona de la carta antes de scrollear.
+        page.mouse.move(250, 450)
+
         for round_i in range(max_rounds):
-            page.mouse.wheel(0, 500)
-            moved = scroll_everything()
-            # Captura el texto INMEDIATAMENTE tras el scroll, sin esperar,
-            # porque la app revierte la posición de scroll al poco tiempo
-            # (probablemente su propia lógica de virtualización).
+            # Muchos ticks PEQUEÑOS y reales (simulan la física de un scroll
+            # físico) en vez de un salto grande de scrollTop: la app solo
+            # recalcula su virtualización con eventos de scroll genuinos.
+            for _ in range(6):
+                page.mouse.wheel(0, 80)
+                page.wait_for_timeout(40)
             text = scrape_category_text(page)
             if text not in seen_snippets:
                 raw_chunks.append(text)
@@ -280,9 +285,9 @@ def run():
                 stable_rounds = 0
             else:
                 stable_rounds += 1
-            page.wait_for_timeout(150)
             if config.DEBUG_MODE and round_i < 5:
-                log(f"Ronda {round_i}: scrollbox se movió {moved}px")
+                scroll_top = page.evaluate("document.querySelector('.scrollbox')?.scrollTop ?? -1")
+                log(f"Ronda {round_i}: scrollbox.scrollTop = {scroll_top}")
 
             if stable_rounds > 15:
                 log(f"Fin de la carta detectado en el intento {round_i}")
