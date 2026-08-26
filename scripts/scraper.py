@@ -126,6 +126,9 @@ def run():
                 f.write(page.content())
 
         # Banner de cookies (si aparece): aceptar para no bloquear los clics siguientes.
+        # Se intenta por selector, y si no desaparece, por coordenadas de píxel
+        # directas (el botón "Aceptar" siempre aparece en la misma zona del
+        # viewport 500x900).
         cookie_re = re.compile(r"Ok|Aceptar|Accept", re.IGNORECASE)
         try:
             page.get_by_role("button", name=cookie_re).first.click(timeout=5000, force=True)
@@ -134,18 +137,25 @@ def run():
                 page.get_by_text(cookie_re).first.click(timeout=3000, force=True)
             except Exception:
                 pass
-        # Verifica que el banner ya no está; si sigue, prueba con Escape y con
-        # un clic directo en el backdrop del overlay.
-        for _ in range(3):
+        for attempt in range(4):
             try:
-                page.get_by_text("cookies", exact=False).first.wait_for(state="hidden", timeout=2000)
+                page.get_by_text("cookies", exact=False).first.wait_for(state="hidden", timeout=1500)
                 break
             except Exception:
+                if config.DEBUG_MODE:
+                    page.screenshot(path=os.path.join(config.DEBUG_DIR, f"cookie_attempt_{attempt}.png"))
                 page.keyboard.press("Escape")
                 try:
-                    page.locator(".cdk-overlay-backdrop").first.click(timeout=1500, force=True)
+                    page.locator(".cdk-overlay-backdrop").first.click(timeout=1000, force=True)
                 except Exception:
                     pass
+                # Clic directo por coordenadas sobre el botón "Aceptar" (zona
+                # inferior del viewport 500x900), como último recurso.
+                try:
+                    page.mouse.click(251, 861)
+                except Exception:
+                    pass
+                page.wait_for_timeout(500)
         page.wait_for_timeout(1000)
 
         if config.DEBUG_MODE:
