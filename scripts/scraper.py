@@ -268,6 +268,11 @@ def run():
             """)
 
         for round_i in range(max_rounds):
+            page.mouse.wheel(0, 500)
+            moved = scroll_everything()
+            # Captura el texto INMEDIATAMENTE tras el scroll, sin esperar,
+            # porque la app revierte la posición de scroll al poco tiempo
+            # (probablemente su propia lógica de virtualización).
             text = scrape_category_text(page)
             if text not in seen_snippets:
                 raw_chunks.append(text)
@@ -275,11 +280,8 @@ def run():
                 stable_rounds = 0
             else:
                 stable_rounds += 1
-
-            page.mouse.wheel(0, 500)
-            moved = scroll_everything()
-            page.wait_for_timeout(300)
-            if config.DEBUG_MODE and round_i < 3:
+            page.wait_for_timeout(150)
+            if config.DEBUG_MODE and round_i < 5:
                 log(f"Ronda {round_i}: scrollbox se movió {moved}px")
 
             if stable_rounds > 15:
