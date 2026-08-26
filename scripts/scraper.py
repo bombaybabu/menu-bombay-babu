@@ -126,8 +126,9 @@ def run():
                 f.write(page.content())
 
         # Banner de cookies (si aparece): aceptar para no bloquear los clics siguientes.
+        cookie_re = re.compile(r"^(Ok|Aceptar|Accept)$")
         try:
-            page.get_by_text("Ok", exact=True).first.click(timeout=5000)
+            page.get_by_text(cookie_re).first.click(timeout=5000)
             page.wait_for_timeout(2000)
         except Exception:
             pass  # No había banner de cookies
