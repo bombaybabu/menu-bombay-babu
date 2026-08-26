@@ -205,6 +205,33 @@ def run():
 
         log(f"Carta cargada: {page.url}")
 
+        if config.DEBUG_MODE:
+            diag = page.evaluate("""
+                () => {
+                    const results = [];
+                    document.querySelectorAll('*').forEach(el => {
+                        if (el.scrollHeight > el.clientHeight + 50) {
+                            results.push({
+                                tag: el.tagName,
+                                cls: el.className,
+                                scrollHeight: el.scrollHeight,
+                                clientHeight: el.clientHeight,
+                                scrollTop: el.scrollTop
+                            });
+                        }
+                    });
+                    return {
+                        scrollables: results,
+                        windowScrollY: window.scrollY,
+                        bodyScrollHeight: document.body.scrollHeight,
+                        bodyClientHeight: document.body.clientHeight,
+                    };
+                }
+            """)
+            with open(os.path.join(config.DEBUG_DIR, "scroll_diagnosis.json"), "w") as f:
+                json.dump(diag, f, indent=2)
+            log(f"Diagnóstico de scroll: {json.dumps(diag)[:1000]}")
+
         # Scroll incremental por toda la carta, capturando texto en cada paso.
         # La lista está virtualizada (el DOM solo contiene el tramo visible),
         # así que document.body.scrollHeight no cambia con el scroll — el
