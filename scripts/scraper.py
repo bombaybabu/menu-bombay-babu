@@ -126,9 +126,9 @@ def run():
                 f.write(page.content())
 
         # Banner de cookies (si aparece): aceptar para no bloquear los clics siguientes.
-        cookie_re = re.compile(r"^(Ok|Aceptar|Accept)$")
+        cookie_re = re.compile(r"Ok|Aceptar|Accept", re.IGNORECASE)
         try:
-            page.get_by_text(cookie_re).first.click(timeout=5000)
+            page.get_by_text(cookie_re).first.click(timeout=5000, force=True)
             page.wait_for_timeout(2000)
         except Exception:
             pass  # No había banner de cookies
@@ -145,20 +145,20 @@ def run():
         ahora_btn = page.get_by_text(ahora_re).first
         try:
             ahora_btn.wait_for(state="visible", timeout=15000)
-            ahora_btn.click()
+            ahora_btn.click(force=True)
         except Exception:
             log("Restaurante cerrado: seleccionando día/hora manualmente")
-            page.get_by_text(seleccionar_re).first.click(timeout=15000)
+            page.get_by_text(seleccionar_re).first.click(timeout=15000, force=True)
             page.wait_for_timeout(1500)
             if config.DEBUG_MODE:
                 page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b_datetime.png"))
             # Selecciona el primer día y la primera hora disponibles en la lista.
-            page.locator("text=/^\\d{1,2}:\\d{2}$/").first.click(timeout=10000)
+            page.locator("text=/^\\d{1,2}:\\d{2}$/").first.click(timeout=10000, force=True)
             page.wait_for_timeout(500)
             # Confirma la selección si hay un botón de continuar/aceptar.
             for label in ["Continuar", "Continue", "Aceptar", "Accept", "Confirmar", "Confirm", "Ok"]:
                 try:
-                    page.get_by_text(label, exact=True).first.click(timeout=2000)
+                    page.get_by_text(label, exact=True).first.click(timeout=2000, force=True)
                     break
                 except Exception:
                     continue
