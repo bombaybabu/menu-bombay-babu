@@ -241,6 +241,7 @@ def run():
                 f.write(page.content())
 
         log(f"Carta cargada: {page.url}")
+        category_list_url = page.url
 
         if config.DEBUG_MODE:
             diag = page.evaluate("""
@@ -305,6 +306,12 @@ def run():
 
         for cat_name in known_categories:
             log(f"Entrando en categoría: {cat_name}")
+            # Vuelve siempre a la URL exacta de la lista de categorías antes
+            # de cada clic — más fiable que un botón "atrás" que puede fallar
+            # silenciosamente y dejarnos en la página anterior sin avisar.
+            page.goto(category_list_url, wait_until="load", timeout=20000)
+            page.wait_for_timeout(1200)
+
             cat_rect = page.evaluate("""
                 (name) => {
                     const all = document.querySelectorAll('*');
@@ -334,20 +341,6 @@ def run():
             cat_text = scrape_category_text(page)
             more_text = scroll_and_collect()
             all_raw_chunks.append(f"{cat_name}\n{cat_text}\n{more_text}")
-
-            # Vuelve a la lista de categorías (botón de retroceso, si existe,
-            # o navegación hacia atrás del navegador como red de seguridad).
-            went_back = False
-            try:
-                page.locator("[class*='back'], .keyboard_arrow_left, mat-icon:has-text('chevron_left')").first.click(
-                    timeout=3000, force=True
-                )
-                went_back = True
-            except Exception:
-                pass
-            if not went_back:
-                page.go_back(timeout=5000)
-            page.wait_for_timeout(1200)
 
         combined_text = "\n".join(all_raw_chunks)
         if config.DEBUG_MODE:
