@@ -274,63 +274,82 @@ def run():
         # así que document.body.scrollHeight no cambia con el scroll — el
         # criterio de "fin" es que el texto capturado deje de aportar
         # contenido nuevo durante varias rondas seguidas.
-        seen_snippets = set()
-        raw_chunks = []
-        stable_rounds = 0
-        max_rounds = 500
+        def scroll_and_collect(max_rounds=200, stable_limit=10):
+            """Hace scroll con muchos ticks pequeños (única técnica que
+            funciona de verdad: la app ignora saltos grandes de scrollTop)
+            y recopila el texto visible hasta que deja de cambiar."""
+            seen = set()
+            chunks = []
+            stable = 0
+            page.mouse.move(250, 450)
+            for i in range(max_rounds):
+                for _ in range(6):
+                    page.mouse.wheel(0, 80)
+                    page.wait_for_timeout(40)
+                text = scrape_category_text(page)
+                if text not in seen:
+                    chunks.append(text)
+                    seen.add(text)
+                    stable = 0
+                else:
+                    stable += 1
+                if stable > stable_limit:
+                    break
+            return "\n".join(chunks)
 
-        def scroll_everything():
-            """mouse.wheel no siempre llega al contenedor interno correcto en
-            esta app; se fuerza el scroll vía JS directamente sobre .scrollbox
-            (el contenedor real identificado por diagnóstico) y, como red de
-            seguridad, sobre cualquier otro elemento desplazable."""
-            return page.evaluate("""
-                () => {
-                    let moved = 0;
-                    const box = document.querySelector('.scrollbox');
-                    if (box) {
-                        const before = box.scrollTop;
-                        box.scrollTop += 600;
-                        box.dispatchEvent(new Event('scroll', {bubbles: true}));
-                        moved = box.scrollTop - before;
-                    }
-                    window.scrollBy(0, 600);
-                    document.querySelectorAll('*').forEach(el => {
-                        if (el.scrollHeight > el.clientHeight + 50) {
-                            el.scrollTop += 600;
+        # El scroll de la pantalla de categorías solo llega a mostrar los
+        # TÍTULOS de categoría (altura total limitada); hay que entrar en
+        # cada categoría (clic -> nueva ruta shop-letter-family-list/<id>)
+        # para ver sus platos, y volver atrás para pasar a la siguiente.
+        all_raw_chunks = []
+
+        for cat_name in known_categories:
+            log(f"Entrando en categoría: {cat_name}")
+            cat_rect = page.evaluate("""
+                (name) => {
+                    const all = document.querySelectorAll('*');
+                    for (const el of all) {
+                        const t = (el.textContent || '').trim().toUpperCase();
+                        if (t === name && el.children.length === 0) {
+                            const r = el.getBoundingClientRect();
+                            if (r.width > 0 && r.height > 0) {
+                                return {x: r.x + r.width / 2, y: r.y + r.height / 2};
+                            }
                         }
-                    });
-                    return moved;
+                    }
+                    return null;
                 }
-            """)
+            """, cat_name)
+            if not cat_rect:
+                log(f"  No se encontró la categoría '{cat_name}' en pantalla, se omite")
+                continue
 
-        # page.mouse.wheel debe apuntar sobre el contenedor real; se centra el
-        # ratón sobre la zona de la carta antes de scrollear.
-        page.mouse.move(250, 450)
+            page.mouse.click(cat_rect["x"], cat_rect["y"])
+            page.wait_for_timeout(1500)
 
-        for round_i in range(max_rounds):
-            # Muchos ticks PEQUEÑOS y reales (simulan la física de un scroll
-            # físico) en vez de un salto grande de scrollTop: la app solo
-            # recalcula su virtualización con eventos de scroll genuinos.
-            for _ in range(6):
-                page.mouse.wheel(0, 80)
-                page.wait_for_timeout(40)
-            text = scrape_category_text(page)
-            if text not in seen_snippets:
-                raw_chunks.append(text)
-                seen_snippets.add(text)
-                stable_rounds = 0
-            else:
-                stable_rounds += 1
-            if config.DEBUG_MODE and round_i < 5:
-                scroll_top = page.evaluate("document.querySelector('.scrollbox')?.scrollTop ?? -1")
-                log(f"Ronda {round_i}: scrollbox.scrollTop = {scroll_top}")
+            if config.DEBUG_MODE:
+                safe = cat_name.replace(" ", "_")
+                page.screenshot(path=os.path.join(config.DEBUG_DIR, f"cat_{safe}.png"))
 
-            if stable_rounds > 15:
-                log(f"Fin de la carta detectado en el intento {round_i}")
-                break
+            cat_text = scrape_category_text(page)
+            more_text = scroll_and_collect()
+            all_raw_chunks.append(f"{cat_name}\n{cat_text}\n{more_text}")
 
-        combined_text = "\n".join(raw_chunks)
+            # Vuelve a la lista de categorías (botón de retroceso, si existe,
+            # o navegación hacia atrás del navegador como red de seguridad).
+            went_back = False
+            try:
+                page.locator("[class*='back'], .keyboard_arrow_left, mat-icon:has-text('chevron_left')").first.click(
+                    timeout=3000, force=True
+                )
+                went_back = True
+            except Exception:
+                pass
+            if not went_back:
+                page.go_back(timeout=5000)
+            page.wait_for_timeout(1200)
+
+        combined_text = "\n".join(all_raw_chunks)
         if config.DEBUG_MODE:
             with open(os.path.join(config.DEBUG_DIR, "raw_text.txt"), "w") as f:
                 f.write(combined_text)
