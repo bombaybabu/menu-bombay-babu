@@ -155,8 +155,8 @@ def run():
         # aparece "Ahora"/"Now"; si está cerrado, solo aparece la opción de
         # seleccionar día y hora manualmente. El idioma puede variar (es/en)
         # según cómo la app decida el idioma, así que se aceptan ambos.
-        ahora_re = re.compile(r"^(Ahora|Now)$")
-        seleccionar_re = re.compile(r"^(Seleccionar día y hora|Select day and hour)$")
+        ahora_re = re.compile(r"\bAhora\b|\bNow\b", re.IGNORECASE)
+        seleccionar_re = re.compile(r"Seleccionar día y hora|Select day and hour", re.IGNORECASE)
         ahora_btn = page.get_by_text(ahora_re).first
         try:
             ahora_btn.wait_for(state="visible", timeout=15000)
@@ -183,7 +183,7 @@ def run():
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step2_how.png"))
 
         # Pantalla "¿Cómo?" -> "A recoger en local" / "Pick up in store"
-        recoger_re = re.compile(r"^(A recoger en local|Pick up in store|Pickup)$")
+        recoger_re = re.compile(r"A recoger en local|Pick up in store|Pickup", re.IGNORECASE)
         page.get_by_text(recoger_re).first.wait_for(state="visible", timeout=20000)
         page.get_by_text(recoger_re).first.click()
         page.wait_for_timeout(2500)
