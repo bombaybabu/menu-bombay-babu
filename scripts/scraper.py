@@ -215,6 +215,11 @@ def run():
         stable_rounds = 0
         max_rounds = 500
 
+        # page.mouse.wheel hace scroll desde la posición actual del ratón, que
+        # por defecto es (0,0) — fuera de la zona con contenido. Se centra el
+        # ratón en el viewport antes de empezar a scrollear.
+        page.mouse.move(250, 450)
+
         for round_i in range(max_rounds):
             text = scrape_category_text(page)
             if text not in seen_snippets:
