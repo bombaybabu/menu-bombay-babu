@@ -177,7 +177,22 @@ def run():
             page.wait_for_timeout(1500)
             if config.DEBUG_MODE:
                 page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b_datetime.png"))
-            # Selecciona el primer día y la primera hora disponibles en la lista.
+            # Primero hay que elegir un día en el calendario (celda no
+            # deshabilitada de Angular Material), y solo entonces aparece
+            # la lista de horas disponibles para ese día.
+            try:
+                page.locator(".mat-calendar-body-cell:not(.mat-calendar-body-disabled)").first.click(
+                    timeout=8000, force=True
+                )
+            except Exception:
+                # Alternativa: cualquier botón/celda de día que no esté claramente deshabilitado.
+                page.locator("[class*='calendar'][class*='cell']:not([aria-disabled='true'])").first.click(
+                    timeout=5000, force=True
+                )
+            page.wait_for_timeout(1000)
+            if config.DEBUG_MODE:
+                page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b2_after_day.png"))
+            # Ahora sí, selecciona la primera hora disponible en la lista.
             page.locator("text=/^\\d{1,2}:\\d{2}$/").first.click(timeout=10000, force=True)
             page.wait_for_timeout(500)
             # Confirma la selección si hay un botón de continuar/aceptar.
