@@ -128,10 +128,25 @@ def run():
         # Banner de cookies (si aparece): aceptar para no bloquear los clics siguientes.
         cookie_re = re.compile(r"Ok|Aceptar|Accept", re.IGNORECASE)
         try:
-            page.get_by_text(cookie_re).first.click(timeout=5000, force=True)
-            page.wait_for_timeout(2000)
+            page.get_by_role("button", name=cookie_re).first.click(timeout=5000, force=True)
         except Exception:
-            pass  # No había banner de cookies
+            try:
+                page.get_by_text(cookie_re).first.click(timeout=3000, force=True)
+            except Exception:
+                pass
+        # Verifica que el banner ya no está; si sigue, prueba con Escape y con
+        # un clic directo en el backdrop del overlay.
+        for _ in range(3):
+            try:
+                page.get_by_text("cookies", exact=False).first.wait_for(state="hidden", timeout=2000)
+                break
+            except Exception:
+                page.keyboard.press("Escape")
+                try:
+                    page.locator(".cdk-overlay-backdrop").first.click(timeout=1500, force=True)
+                except Exception:
+                    pass
+        page.wait_for_timeout(1000)
 
         if config.DEBUG_MODE:
             page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1c_after_cookies.png"))
