@@ -193,9 +193,29 @@ def run():
             if config.DEBUG_MODE:
                 page.screenshot(path=os.path.join(config.DEBUG_DIR, "step1b2_after_day.png"))
             # Ahora sí, selecciona la primera hora disponible en la lista.
-            hora_btn = page.locator("text=/^\\d{1,2}:\\d{2}$/").first
-            hora_btn.scroll_into_view_if_needed(timeout=5000)
-            hora_btn.click(timeout=15000)
+            # Se evita el locator de texto de Playwright (ha dado problemas de
+            # coincidencia) y se busca el botón directamente por JS, haciendo
+            # clic por coordenadas sobre su centro.
+            hora_rect = page.evaluate("""
+                () => {
+                    const re = /^\\d{1,2}:\\d{2}$/;
+                    const all = document.querySelectorAll('*');
+                    for (const el of all) {
+                        const t = (el.textContent || '').trim();
+                        if (re.test(t) && el.children.length === 0) {
+                            const r = el.getBoundingClientRect();
+                            if (r.width > 0 && r.height > 0) {
+                                return {x: r.x + r.width / 2, y: r.y + r.height / 2};
+                            }
+                        }
+                    }
+                    return null;
+                }
+            """)
+            if hora_rect:
+                page.mouse.click(hora_rect["x"], hora_rect["y"])
+            else:
+                raise RuntimeError("No se encontró ningún botón de hora tras seleccionar el día")
             page.wait_for_timeout(500)
             # Confirma la selección si hay un botón de continuar/aceptar.
             for label in ["Continuar", "Continue", "Aceptar", "Accept", "Confirmar", "Confirm", "Ok"]:
