@@ -244,16 +244,26 @@ def run():
 
         def scroll_everything():
             """mouse.wheel no siempre llega al contenedor interno correcto en
-            esta app; se fuerza el scroll vía JS sobre cualquier elemento
-            desplazable de la página (window + cualquier div con overflow)."""
-            page.evaluate("""
+            esta app; se fuerza el scroll vía JS directamente sobre .scrollbox
+            (el contenedor real identificado por diagnóstico) y, como red de
+            seguridad, sobre cualquier otro elemento desplazable."""
+            return page.evaluate("""
                 () => {
-                    window.scrollBy(0, 500);
+                    let moved = 0;
+                    const box = document.querySelector('.scrollbox');
+                    if (box) {
+                        const before = box.scrollTop;
+                        box.scrollTop += 600;
+                        box.dispatchEvent(new Event('scroll', {bubbles: true}));
+                        moved = box.scrollTop - before;
+                    }
+                    window.scrollBy(0, 600);
                     document.querySelectorAll('*').forEach(el => {
                         if (el.scrollHeight > el.clientHeight + 50) {
-                            el.scrollTop += 500;
+                            el.scrollTop += 600;
                         }
                     });
+                    return moved;
                 }
             """)
 
@@ -267,8 +277,10 @@ def run():
                 stable_rounds += 1
 
             page.mouse.wheel(0, 500)
-            scroll_everything()
+            moved = scroll_everything()
             page.wait_for_timeout(300)
+            if config.DEBUG_MODE and round_i < 3:
+                log(f"Ronda {round_i}: scrollbox se movió {moved}px")
 
             if stable_rounds > 15:
                 log(f"Fin de la carta detectado en el intento {round_i}")
