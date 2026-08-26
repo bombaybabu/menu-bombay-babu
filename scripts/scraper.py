@@ -215,10 +215,20 @@ def run():
         stable_rounds = 0
         max_rounds = 500
 
-        # page.mouse.wheel hace scroll desde la posición actual del ratón, que
-        # por defecto es (0,0) — fuera de la zona con contenido. Se centra el
-        # ratón en el viewport antes de empezar a scrollear.
-        page.mouse.move(250, 450)
+        def scroll_everything():
+            """mouse.wheel no siempre llega al contenedor interno correcto en
+            esta app; se fuerza el scroll vía JS sobre cualquier elemento
+            desplazable de la página (window + cualquier div con overflow)."""
+            page.evaluate("""
+                () => {
+                    window.scrollBy(0, 500);
+                    document.querySelectorAll('*').forEach(el => {
+                        if (el.scrollHeight > el.clientHeight + 50) {
+                            el.scrollTop += 500;
+                        }
+                    });
+                }
+            """)
 
         for round_i in range(max_rounds):
             text = scrape_category_text(page)
@@ -230,6 +240,7 @@ def run():
                 stable_rounds += 1
 
             page.mouse.wheel(0, 500)
+            scroll_everything()
             page.wait_for_timeout(300)
 
             if stable_rounds > 15:
