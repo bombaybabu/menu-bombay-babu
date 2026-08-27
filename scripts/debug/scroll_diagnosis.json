@@ -1,0 +1,14 @@
+{
+  "scrollables": [
+    {
+      "tag": "DIV",
+      "cls": "scrollbox",
+      "scrollHeight": 1580,
+      "clientHeight": 825,
+      "scrollTop": 0
+    }
+  ],
+  "windowScrollY": 0,
+  "bodyScrollHeight": 900,
+  "bodyClientHeight": 900
+}
