@@ -6204,6 +6204,16 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CHICKEN TANDOORI SIZZLER
+Muslos de Pollo con hueso marinado en yogur rojo especiado, cocinado en horno de barro. Se sirve con cebolla frita y limón
+desde
+12,90€
++
+KING PRAWN SIZZLER
+Langostinos cocinados en sarten con especias y cebollas, con un sabor que no podrás olvidar
+desde
+16,90€
++
 TANDOORI MIX GRILL
 Combinacion de Cordero, sheekh kebab, Pollo Tikka, Muslos de pollo y Langostinos
 desde
@@ -6231,10 +6241,6 @@ ARROZ CON VERDURAS
 Arroz basmati con verduras
 5,40€
 +
-MUSHROOM RICE
-Arroz basmati con champiñones
-5,40€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -6780,10 +6786,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-CHICKEN TIKKA MASALA (KIDS)
-7,90€
-+
-POSTRES
 HELADO HINDÚ DE PISTACHO
 5,50€
 +
@@ -6804,6 +6806,10 @@ ARROZ CON LECHE CASERO AL ESTILO HINDÚ
 +
 DOS CHOCOLATES/MARACUYA
 Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
+5,95€
++
+CHEESECAKE DE COCO CON MANGO
+Nata, coco, crujiente de coco, frutas de mango, bizcocho
 5,95€
 +
 more_vert
@@ -7017,9 +7023,6 @@ SIDRA KOPPERBERG 50CL
 VINO DE LA CASA BLANCA
 18,00€
 +
-VINO DE LA CASA ROSADO
-18,00€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -7122,9 +7125,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MARQUÉS DE CÁCERES (TINTO RIOJA, CRIANZA)
-24,90€
-+
 TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
@@ -7146,6 +7146,7 @@ MATEUS ROSE
 CAMPUSTAURO ROSE
 20,00€
 +
+TARJETA REGALO
 more_vert
 keyboard_arrow_left
 menu
@@ -7480,6 +7481,7 @@ CHEESE & GARLIC NAAN
 Pan con ajo y queso
 5,40€
 +
+CHAPATIS Y PARATHAS
 more_vert
 keyboard_arrow_left
 menu
@@ -7779,6 +7781,9 @@ CHICKEN TIKKA MASALA (KIDS)
 7,90€
 +
 POSTRES
+HELADO HINDÚ DE PISTACHO
+5,50€
++
 more_vert
 keyboard_arrow_left
 menu
@@ -7838,9 +7843,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-HELADO HINDÚ DE MANGO
-5,50€
-+
 HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
@@ -7865,6 +7867,13 @@ CHEESECAKE CLASSIC
 Nata, crema queso, mermelada de arándanos, galleta
 5,95€
 +
+KINDER CAKE
+EL FAVORITO DE LOS NIÑOS!! Nata, crema de Kinder, crujiente de Kinder, bizcocho.
+5,95€
++
+FERRERO SIN AZUCAR
+5,95€
++
 more_vert
 keyboard_arrow_left
 menu
@@ -7883,6 +7892,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+ARROZ CON LECHE CASERO AL ESTILO HINDÚ
+4,75€
++
 DOS CHOCOLATES/MARACUYA
 Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
@@ -7907,6 +7919,9 @@ COCA COLA 2 LITROS
 5,00€
 +
 COCA COLA LIGHT 2 LITROS
+5,00€
++
+FANTA NARANJA 2 LITROS
 5,00€
 +
 more_vert
@@ -8012,12 +8027,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MINUTE MAID NARANJA
-3,00€
-+
-MINUTE MAID MELOCOTÓN
-3,00€
-+
 MINUTE MAID MANZANA
 3,00€
 +
@@ -8058,9 +8067,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-CERVEZA COBRA
-4,00€
-+
 CERVEZA KINGFISHER
 4,00€
 +
@@ -8081,6 +8087,9 @@ VINO DE LA CASA ROSADO
 +
 VINO TINTO DE LA CASA
 18,00€
++
+VAL ARANDA (RIBERA DEL DUERO JOVEN)
+22,00€
 +
 more_vert
 keyboard_arrow_left
@@ -8184,9 +8193,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-TAJINASTE BLANCO SECO
-27,00€
-+
 PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
@@ -8268,10 +8274,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-BIRYANI
-Arroz Biryani cocinado por separado con una salsa de sabor intenso. Se servirá una salsa medianamente espesa por separado.
-desde
-+
 ARROZ
 ARROZ PILAU
 Arroz basmati indio de tres colores con cebolla, canela, clavo y hierbas
@@ -8296,6 +8298,10 @@ Arroz basmati con huevo cocinado en el tawa
 ARROZ ESPECIAL
 Arroz basmati con huevo picante y guisantes
 5,90€
++
+KEEMA RICE
+Arroz basmati con carne molida y guisantes
+6,40€
 +
 more_vert
 keyboard_arrow_left
@@ -8489,10 +8495,6 @@ PLAIN CHAPATI
 Pan fino integral.
 3,00€
 +
-BUTTER CHAPATI
-Pan fino con matequilla
-3,20€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -8671,6 +8673,10 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+KEEMA MUTTER MASALA
+Carne picada con guisantes al curry servidos en una espesa mezcla picante
+15,90€
++
 KERALA EGG CURRY
 Curry de huevos cocidos en leche de coco con cebolla, ajo, jengibre y masala. Decorado con chiles verdes
 14,90€
@@ -8987,6 +8993,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+SPRITE 2 LITROS
+5,00€
++
 APPLETISER
 3,20€
 +
@@ -9447,10 +9456,6 @@ MALAI KOFTA
 Un plato vegetariano indio popular hecho de paneer y papas sumergidas en una salsa suave y rica
 15,90€
 +
-CHILI CHICKEN
-Un plato especial del sur de la India con un toque mas asiatico al usar salsa de soja marinada con chiles verdes
-16,50€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -9656,6 +9661,9 @@ CHICKEN TIKKA MASALA (KIDS)
 7,90€
 +
 POSTRES
+HELADO HINDÚ DE PISTACHO
+5,50€
++
 more_vert
 keyboard_arrow_left
 menu
@@ -9715,9 +9723,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-HELADO HINDÚ DE MANGO
-5,50€
-+
 HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
@@ -9742,6 +9747,13 @@ CHEESECAKE CLASSIC
 Nata, crema queso, mermelada de arándanos, galleta
 5,95€
 +
+KINDER CAKE
+EL FAVORITO DE LOS NIÑOS!! Nata, crema de Kinder, crujiente de Kinder, bizcocho.
+5,95€
++
+FERRERO SIN AZUCAR
+5,95€
++
 more_vert
 keyboard_arrow_left
 menu
@@ -9760,9 +9772,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-ARROZ CON LECHE CASERO AL ESTILO HINDÚ
-4,75€
-+
 DOS CHOCOLATES/MARACUYA
 Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
@@ -9789,9 +9798,6 @@ COCA COLA 2 LITROS
 COCA COLA LIGHT 2 LITROS
 5,00€
 +
-FANTA NARANJA 2 LITROS
-5,00€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -9895,12 +9901,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MINUTE MAID NARANJA
-3,00€
-+
-MINUTE MAID MELOCOTÓN
-3,00€
-+
 MINUTE MAID MANZANA
 3,00€
 +
@@ -9983,9 +9983,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-SIDRA KOPPERBERG 50CL
-4,25€
-+
 VINO DE LA CASA BLANCA
 18,00€
 +
@@ -10006,6 +10003,9 @@ LUIS GURPEGUI MUGA CRIANZA (RIBERA DEL DUERO, CRIANZA)
 +
 MARQUÉS DE CÁCERES (TINTO RIOJA, CRIANZA)
 24,90€
++
+TAJINASTE (VINO TINTO CANARIO)
+31,90€
 +
 more_vert
 keyboard_arrow_left
@@ -10067,9 +10067,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-TAJINASTE BLANCO SECO
-27,00€
-+
 PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
@@ -10110,49 +10107,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-FAMARA (VINO BLANCO SECO DE LANZAROTE)
-23,70€
-+
-MATEUS ROSE
-18,50€
-+
-CAMPUSTAURO ROSE
-20,00€
-+
-TARJETA REGALO
-TARJETA REGALO 20€
-20,00€
-+
-TARJETA REGALO 40€
-40,00€
-+
-TARJETA REGALO 60€
-60,00€
-+
-TARJETA REGALO 80€
-80,00€
-+
-TARJETA REGALO 100€
-100,00€
-+
-more_vert
-keyboard_arrow_left
-menu
-APERITIVOS
-ENTRANTES
-CURRY
-ACOMPAÑANTES
-SIZZLERS
-BIRYANI
-ARROZ
-NAAN
-CHAPATIS Y PARATHAS
-ESPECIALES DEL CHEF
-MENU INFANTIL
-POSTRES
-BEBIDAS SIN ALCOHOL
-BEBIDAS CON ALCOHOL
-TARJETA REGALO
 MATEUS ROSE
 18,50€
 +
@@ -10231,14 +10185,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-ALOO PARATHA
-Pan fino relleno de papas guisadas y mantequilla
-4,50€
-+
-STUFFED PARATHA
-Pan relleno con cebolloas, coliflor y mantequilla
-4,90€
-+
 ESPECIALES DEL CHEF
 TANGRI BUTTER CHICKEN
 Muslos de pollo al curry. Un estilo casero especial servido rico y cremoso con un toque medio de especias.
@@ -10264,6 +10210,10 @@ KERALA EGG CURRY
 Curry de huevos cocidos en leche de coco con cebolla, ajo, jengibre y masala. Decorado con chiles verdes
 14,90€
 +
+CHILLI PANEER
+CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULCE PICANTE
+16,90€
++
 more_vert
 keyboard_arrow_left
 menu
@@ -10282,14 +10232,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-CHILI CHICKEN
-Un plato especial del sur de la India con un toque mas asiatico al usar salsa de soja marinada con chiles verdes
-16,50€
-+
-MANGO CHICKEN
-Curry aromático dulce con mango en dado y puré
-16,50€
-+
 KEEMA MUTTER MASALA
 Carne picada con guisantes al curry servidos en una espesa mezcla picante
 15,90€
@@ -10378,6 +10320,10 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+KORMA DE POLLO AL AZAFRÁN
+A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
+7,90€
++
 POLLO CHASNEY
 A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
@@ -10405,6 +10351,9 @@ POSTRES
 HELADO HINDÚ DE PISTACHO
 5,50€
 +
+HELADO HINDÚ DE MANGO
+5,50€
++
 more_vert
 keyboard_arrow_left
 menu
@@ -10566,6 +10515,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+FERRERO SIN AZUCAR
+5,95€
++
 BEBIDAS SIN ALCOHOL
 COCA COLA 2 LITROS
 5,00€
@@ -10606,6 +10558,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+FANTA LIMÓN 2 LITROS
+5,00€
++
 SPRITE 2 LITROS
 5,00€
 +
@@ -10627,7 +10582,6 @@ PINEAPPLE JUICE
 MANGO JUICE
 3,00€
 +
-BEBIDAS CON ALCOHOL
 more_vert
 keyboard_arrow_left
 menu
@@ -10668,9 +10622,6 @@ HEINEKEN
 SIDRA STRONGBOW
 3,90€
 +
-SIDRA KOPPERBERG 50CL
-4,25€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -10689,6 +10640,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CERVEZA COBRA
+4,00€
++
 CERVEZA KINGFISHER
 4,00€
 +
@@ -10709,9 +10663,6 @@ VINO DE LA CASA ROSADO
 +
 VINO TINTO DE LA CASA
 18,00€
-+
-VAL ARANDA (RIBERA DEL DUERO JOVEN)
-22,00€
 +
 more_vert
 keyboard_arrow_left
@@ -10773,6 +10724,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CAMPUSTAURO (RIBERA DEL DUERO, ROBLE)
+28,00€
++
 LUIS GURPEGUI MUGA CRIANZA (RIBERA DEL DUERO, CRIANZA)
 26,90€
 +
@@ -10793,9 +10747,6 @@ VIÑA SOL
 +
 FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
-+
-MATEUS ROSE
-18,50€
 +
 more_vert
 keyboard_arrow_left
@@ -10839,9 +10790,6 @@ TARJETA REGALO 20€
 +
 TARJETA REGALO 40€
 40,00€
-+
-TARJETA REGALO 60€
-60,00€
 +
 more_vert
 keyboard_arrow_left
@@ -11527,6 +11475,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+VINO TINTO DE LA CASA
+18,00€
++
 VAL ARANDA (RIBERA DEL DUERO JOVEN)
 22,00€
 +
@@ -11548,9 +11499,6 @@ TAJINASTE BLANCO SECO
 PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
-VIÑA SOL
-22,00€
-+
 more_vert
 keyboard_arrow_left
 menu
@@ -11569,6 +11517,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+MARQUÉS DE CÁCERES (TINTO RIOJA, CRIANZA)
+24,90€
++
 TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
@@ -11590,7 +11541,6 @@ MATEUS ROSE
 CAMPUSTAURO ROSE
 20,00€
 +
-TARJETA REGALO
 more_vert
 keyboard_arrow_left
 menu
@@ -11609,6 +11559,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+VIÑA SOL
+22,00€
++
 FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
@@ -11630,9 +11583,6 @@ TARJETA REGALO 60€
 +
 TARJETA REGALO 80€
 80,00€
-+
-TARJETA REGALO 100€
-100,00€
 +
 more_vert
 keyboard_arrow_left
