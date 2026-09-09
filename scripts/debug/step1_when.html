@@ -1,17 +1,280 @@
-<!DOCTYPE html><html lang="en"><head>
-        <meta charset="utf-8">
-        <title title="">Loading ...</title>
-        <base href="./">        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="google" content="notranslate">
-        <link defer="" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- <script src="//connect.facebook.net/en_US/sdk.js"></script> -->
-        <script src="https://apis.google.com/js/platform.js" gapi_processed="true"></script>
-        <script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJVC456g1dTQbQJAbcCnnj2qo2sgJ2-l8"></script>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.472ac46493945d351d92.css"></head>
-    <body>
-      <script src="globalconfig.js"></script>
-      <app-root></app-root>
-    <script src="runtime-es2015.17457c14264390561f33.js" type="module"></script><script src="runtime-es5.17457c14264390561f33.js" nomodule="" defer=""></script><script src="polyfills-es5.d04c8f1b7bde3ad4462d.js" nomodule="" defer=""></script><script src="polyfills-es2015.4300f3b28d42dcb88c4a.js" type="module"></script><script src="scripts.925185c32559376d8366.js" defer=""></script><script src="main-es2015.4adfd7e42cc94feed480.js" type="module"></script><script src="main-es5.4adfd7e42cc94feed480.js" nomodule="" defer=""></script>
+<!DOCTYPE html><html><head>
+  <meta charset="utf-8">
+   <meta name="google" value="notranslate">
+  <title>PortalRest</title>
+</head>
+
+<body>
+<script>
+
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    if(urlParams.get("data") !== null){
+        var dataPArray = urlParams.get("data").split("");
+        var dataPArrayR =  dataPArray.reverse();
+        var dataPArrayJ = dataPArrayR.join("");
+        var dataP = atob(dataPArrayJ);
+       
+        urlParams = new URLSearchParams(dataP); 
+        }
+
+    var webMapping={};
+   
+    
+     /* Burger King Test */
+     webMapping["375"]="mo/www1363";
+     /* Yammy Telefonica Test */
+     webMapping["1465"]="mo/www2350";
+      
+     webMapping["106530"]="mo/www8008";
+     webMapping["109399"]="mo/www8008";
+   
+    /* Burger King */
+    webMapping["110126"]="mo/www10976";
+    
+     /*Yammy Telefonica N-O*/
+     webMapping["117603"]="mo/www17477";
+     /*Yammy Telefonica S-E*/
+     webMapping["119478"]="mo/www17477";
+     /*Yammy Iberdrola */
+     webMapping["127159"]="mo/www17477";
+     
+     webMapping["117604"]="mo/www17477";
+     webMapping["117602"]="mo/www17477";
+     
+     webMapping["1776"]="mo/www2702";
+     webMapping["1777"]="mo/www2702";
+     webMapping["1778"]="mo/www2702";
+     webMapping["1906"]="mo/www2702";
+     webMapping["119922"]="mo/www18237";
+     webMapping["121190"]="mo/www18237";
+   
+   
+     var webMapping2={};
+     webMapping2["2702"]="mo/www2702";
+     webMapping2["18237"]="mo/www18237";
+     webMapping2["17477"]="mo/www17477";
+    // webMapping2["1363"]="mo/www17477";
+     
+    
+     //Es algun establecimiento que para Pc debe mostrar la versión mobil ?
+     //Yammy,Rodilla
+    function   mustLoadMobileView(idRest,id) 
+    {
+         // (fm: ForceMovile) parametro forzar siempre a layout de mobil, sin paspartu. 
+        if(parseInt(fm) === 1) return true; 
+        //Si usa paspartu debe mostrar mobil
+        if(mustUsePaspartuView(parseInt(idRest))) return true;
+                
+        if(typeof(idRest)==='undefined') idR = 0;
+        else idR = parseInt(idRest);
+       
+        if(typeof(id)==='undefined')  idC= 0; 
+        else idC = parseInt(id);
+            
+        if(idR===0 && idC===0) return false;
+               
+     if((idR === 117603) || (idR === 119478)|| (idR === 1776)|| (idR === 1777)|| (idR === 1778)|| (idR === 127159) ) return true;
+     //if((idR === 117603) || (idR === 119478)|| (idR === 121190)) return true;
+        
+     if((idC === 2702)|| (idC === 18237) || (idC === 17477 )) return true;
+          
+     return false;
+           
+     };
+          
+     //Se debe ir a selección de establecimiento con banner?
+     function mustUsePaspartuView(idRest)
+     { //Tarea 7796 Sedebe usar paspartu por defecto
+       return true;
+     }
+      
+         
+     function detectmob()
+     { 
+     if( navigator.userAgent.match(/Android/i)
+     || navigator.userAgent.match(/webOS/i)
+     || navigator.userAgent.match(/iPhone/i)
+                     || navigator.userAgent.match(/iPad/i)
+                     || navigator.userAgent.match(/iPod/i)
+                     || navigator.userAgent.match(/BlackBerry/i)
+                     || navigator.userAgent.match(/PlayBook/i)
+                     || navigator.userAgent.match(/BB10/i)
+                     || navigator.userAgent.match(/Windows Phone/i)
+                     ) {
+                 return true;
+             } else {
+                return false;
+            }
+      }
+    
+   
+
+    function GetURLParameter(sParam)
+    {
+      var value = urlParams.get(sParam);
+      return value;
+    }
+    
+    function enterWeb(isMobile,idRest,sbw,params)
+    {
+      if(isMobile)
+ 	    {
+        //mobil real
+        if(params.length ===0) window.location.replace( "https://web.portalrest.com");
+        else window.location.replace( "./"+sbw+"/index.html"+params+"&ty=1");	
+ 	    }else{
+            //mobil forzado (PC modo mobil)
+            var custId = sbw.split('mo/www')[1];	
+            //paspartu?
+            if(parseInt(fm) === 1){ 
+                //sin 
+                window.location.replace( "./"+sbw+"/index.html"+params+"&mp=1&ty=1");
+             }else{
+                //con 
+                 if(params.length ===0) window.location.replace( "https://web.portalrest.com");
+                 else{
+                        if((parseInt(m)===4) || (parseInt(m)==7)){
+                          params=params+"&bk="+id;
+                          var timestamp=Math.random(new Date().getTime/1000);
+                          window.location.replace( "./"+sbw+"/pcidx.html"+params+"&ty=1&v="+timestamp);
+                        } else{
+                              httpGetCustomerId(idRest,function(customerId){
+                                                      params=params+"&bk="+customerId;
+                                                      var timestamp=Math.random(new Date().getTime/1000);
+                                                      window.location.replace( "./"+sbw+"/pcidx.html"+params+"&ty=1&v="+timestamp);
+                                                    });
+                        }
+
+                 } 
+            }
+ 	      }
+    }
+
+ function httpGetCustomerId(shopId,callback)
+{
+  var  url='https://cloudlicense02.hiopos.com/eRestPortal/portalerest/portal/getShop?s='+shopId+'&l=es';  
+  var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+     
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          var jsonResponse = JSON.parse(xmlHttp.responseText);
+          var customerID = jsonResponse.idClientDB;
+          callback(customerID);
+        }
+           
+    }
+    xmlHttp.open("GET", url, true); // true for asynchronous 
+    xmlHttp.send(null);
+}
+
+function httpGetRoot(params,callback)
+{
+  var encodedParams = encodeURIComponent(params);
+  var  url='https://cloudlicense02.hiopos.com/eRestPortal/portalerest/portal/getRoute?params='+encodedParams;  
+  var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+     
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          var response = xmlHttp.responseText;
+          callback(response);
+        }
+           
+    }
+    xmlHttp.open("GET", url, true); // true for asynchronous 
+    xmlHttp.send(null);
+}
+
+var params = "";
+if(window.location.search !=="") params = "?"+urlParams.toString();
+
+var idRest=GetURLParameter('idRest');
+var id = GetURLParameter('id');
+
+if(id==='49429'){         id='30271';         params=params.replace('49429','30271'); }
+if(id==='59084') {id='30271'; params=params.replace('59084','30271'); }
+if(id==='31275') {id='49268'; params=params.replace('31275','49268'); }
+
+var grpId  = GetURLParameter('grpId'); 	
+var m = GetURLParameter('m');
+
+// #56450: QR mode replace
+if (idRest == '335501' && m == '6') { params = params.replace('m=6', 'm=2'); }
+
+var fm = GetURLParameter('fm');
+if(typeof(fm)==='undefined') fm = 0;
+
+var mobDev=detectmob();
+
+if(mobDev){
+        
+          if((typeof(idRest)==="undefined")&&(typeof(id)==="undefined")&&(typeof(grpId)==="undefined")){
+                    //Para mobiles idRest y id son obligatorios, si no estan ir al buscador
+                    window.location.replace( "https://web.portalrest.com");
+
+          }else{
+            httpGetRoot(params,function(response){
+                       
+                        if(response.length > 0){
+                          //ir a portalrest2
+                          window.location.replace(response);
+                        }else{
+                              // portalrest legacy
+                              //determinar la ruta de acceso estilo web 
+                              var sbw = webMapping[""+idRest];
+                              if(typeof(id)!=="undefined") sbw = webMapping2[""+id];
+          
+                              if(typeof(sbw)==="undefined") sbw="mo/www";
+                              enterWeb(true,idRest,sbw,params);
+                          }
+                      });
+             
+          }   
+        
+  }else{
+          httpGetRoot(params,function(response){
+           
+            if(response.length > 0){
+                 //ir a portalrest2
+                 window.location.replace(response);
+            }else{
+              //Tasca #1702 : Fontich Yammy PC = Mobil
+              //Es algun establecimiento que para Pc debe mostrar la versión mobil ?
+              if(mustLoadMobileView(idRest,id))
+              {
+                //determinar la ruta de acceso estilo web 
+                var sbw = webMapping[""+idRest];
+                if(typeof(id)!=="undefined") sbw = webMapping2[""+id];
+                if(typeof(sbw)==="undefined") sbw="mo/www";
+                enterWeb(false,idRest,sbw,params);
+            
+              }else{
+                  if(params.length===0) params="?ty=0";
+                  else  params=params+'&ty=0';
+
+                  window.location.replace('./main.html'+params);
+
+                  if(typeof(m)==="undefined") window.location.replace('./main.html'+params);
+                  else{
+                      //Callcenter o WebPC
+                      if(m==="5") window.location.replace('./maincc.html'+params);
+                      else{
+                            window.location.replace('./main.html'+params);
+                      } 
+                  }
+                  
+              }
+            }
+
+          });
+            
+        }  
+
+
+  
+
+	
+</script>
+
 
 </body></html>
