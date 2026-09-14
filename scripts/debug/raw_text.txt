@@ -46,7 +46,6 @@ Chutney de Mango
 1,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -93,7 +92,6 @@ RAITA
 2,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -138,7 +136,6 @@ Queso fresco indio empanado con harina de garbanzos y frito
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -189,7 +186,6 @@ Muslos de pollo fresco marinado en yogur de especies y cocinado entero en el hor
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -240,7 +236,6 @@ Langostinos cocinados con bastante ajo, salsa de especies y aceite
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -291,7 +286,6 @@ Alitas de pollo marinado en pimientos.Servido frito con extra picante
 6,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -339,7 +333,6 @@ Elaborado con las cebollas picadas, pimientos verdes y rojos asados, semillas de
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -395,7 +388,6 @@ Elaborado con una gran cantidad de cebollas, tanto cocinado en el curry y como g
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -446,7 +438,6 @@ Curry suave y cremoso como el korma con cócktel de frutas decorado con almendra
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -497,7 +488,6 @@ Curry con hojas de alholva o fenogreco amargos con sus propiedades medicinales q
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -552,7 +542,6 @@ Sabor medio suave con su toque unico de crema de coco.
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -604,7 +593,6 @@ Lentejas cocidas en una sopa espesa con especies.
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -655,7 +643,6 @@ Champiñones cocinados en una salsa suave de tomate con cebolla picada y especia
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -712,7 +699,6 @@ desde
 14,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -764,7 +750,6 @@ desde
 12,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -820,7 +805,6 @@ Arroz basmati con verduras
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -868,7 +852,6 @@ Arroz basmati con carne molida y guisantes
 6,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -918,7 +901,6 @@ JEERA RICE
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -965,7 +947,6 @@ Pan con pimientos verdes y chili
 4,10€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1016,7 +997,6 @@ Pan con ajo y chili
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1068,7 +1048,6 @@ Pan fino con matequilla
 3,20€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1124,7 +1103,6 @@ Pan relleno con cebolloas, coliflor y mantequilla
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1180,7 +1158,6 @@ Curry aromático dulce con mango en dado y puré
 16,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1231,7 +1208,6 @@ NOODLES AL ESTILO INDIO-CHINO SALTEADOS EN WOK CON ESPECIAS Y VERDURAS DE LA IND
 15,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1276,7 +1252,6 @@ A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1325,7 +1300,6 @@ CUBOS DE SOJA ASADOS AL TANDOOR CON RICA SALSA MASALA A ELEGIR CON: ARROZ BASMAT
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1373,7 +1347,6 @@ HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1418,7 +1391,6 @@ Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1465,7 +1437,6 @@ FERRERO SIN AZUCAR
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1508,7 +1479,6 @@ FANTA LIMÓN 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1551,7 +1521,6 @@ MINUTE MAID MELOCOTÓN
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1592,7 +1561,6 @@ CERVEZA COBRA
 4,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1636,7 +1604,6 @@ VINO DE LA CASA BLANCA
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1679,7 +1646,6 @@ CAMPUSTAURO (RIBERA DEL DUERO, ROBLE)
 28,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1722,7 +1688,6 @@ TAJINASTE BLANCO SECO
 27,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1765,7 +1730,6 @@ CAMPUSTAURO ROSE
 20,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1809,7 +1773,6 @@ TARJETA REGALO 80€
 80,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1850,7 +1813,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 ENTRANTES
 keyboard_arrow_left
 menu
@@ -1899,7 +1861,6 @@ Trozos de pollo marinado con un toque de comino, cocinadas al horno de barro
 6,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -1950,7 +1911,6 @@ Gambas salteadas con verduras servidas encima de pan fino redondo y recien hecho
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2001,7 +1961,6 @@ Pollo marinado en pasta de nuez de la india y yogur suave. Cocinado en el horno 
 6,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2049,7 +2008,6 @@ Incluye onion bhaji, chicken barra kebab, chicken tikka, pudina tikka, vegetable
 +
 CURRY
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2097,7 +2055,6 @@ Es el curry clasico que consiste de tomates frescos, en una salsa suave decorado
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2148,7 +2105,6 @@ Curry semi espeso preparado con champiñones, toque de coco cebollas jengibre y 
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2199,7 +2155,6 @@ Es uno de los platos más populares con su sabor suave pero denso con nata y alm
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2250,7 +2205,6 @@ Un plato aromático de Cachemira, cocinado con tomates, jengibre, ajo, cilantro 
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2298,7 +2252,6 @@ Patatas y coliflor ligeramente fritas y cocinadas en una salsa seca con tomate.
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2346,7 +2299,6 @@ Garbanzos cocinados en una salsa suave de tomate y especias.
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2393,7 +2345,6 @@ Mutter Paneer
 +
 SIZZLERS
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2449,7 +2400,6 @@ desde
 18,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2502,7 +2452,6 @@ Arroz basmati indio de tres colores con cebolla, canela, clavo y hierbas
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2551,7 +2500,6 @@ Arroz basmati con huevo cocinado en el tawa
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2602,7 +2550,6 @@ Arroz basmati enriquecido con dulce de coco color naranja
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2657,7 +2604,6 @@ Pan relleno de coco, sultanas y azucar
 4,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2705,7 +2651,6 @@ Pan con relleno de carne molida
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2756,7 +2701,6 @@ Pan con ajo y queso
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2804,7 +2748,6 @@ Pan fino ligeramente más gorda que el chapati
 3,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2852,7 +2795,6 @@ Un plato vegetariano indio popular hecho de paneer y papas sumergidas en una sal
 15,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2908,7 +2850,6 @@ CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULC
 16,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -2961,7 +2902,6 @@ FISH FINGERS AND CHIPS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3014,7 +2954,6 @@ Lentejas cocinadas en una sopa espesa con especias servido con mantequila natura
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3064,7 +3003,6 @@ HELADO HINDÚ DE PISTACHO
 5,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3106,7 +3044,6 @@ BOLAS DE HARINA Y LECHE FRITAS EN ALMIBAR
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3156,7 +3093,6 @@ FERRERO SIN AZUCAR
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3201,7 +3137,6 @@ COCA COLA LIGHT 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3245,7 +3180,6 @@ MINUTE MAID NARANJA
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3288,7 +3222,6 @@ MANGO JUICE
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3329,7 +3262,6 @@ SIDRA STRONGBOW
 3,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3372,7 +3304,6 @@ VINO TINTO DE LA CASA
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3415,7 +3346,6 @@ TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3458,7 +3388,6 @@ FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3499,7 +3428,6 @@ TARJETA REGALO 40€
 40,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3540,7 +3468,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 CURRY
 keyboard_arrow_left
 menu
@@ -3589,7 +3516,6 @@ Elaborado con una gran cantidad de cebollas, tanto cocinado en el curry y como g
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3640,7 +3566,6 @@ Curry suave y cremoso como el korma con cócktel de frutas decorado con almendra
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3691,7 +3616,6 @@ Curry mas denso que contiene huevo con ajo jengibre y cilantro.
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3746,7 +3670,6 @@ Sabor medio suave con su toque unico de crema de coco.
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3794,7 +3717,6 @@ Lentejas cocidas en una sopa espesa con especies.
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3845,7 +3767,6 @@ Champiñones cocinados en una salsa suave de tomate con cebolla picada y especia
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3894,7 +3815,6 @@ desde
 14,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -3951,7 +3871,6 @@ desde
 +
 BIRYANI
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4007,7 +3926,6 @@ Arroz basmati con verduras
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4025,7 +3943,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-ARROZ
 ARROZ PILAU
 Arroz basmati indio de tres colores con cebolla, canela, clavo y hierbas
 4,90€
@@ -4055,7 +3972,6 @@ Arroz basmati con carne molida y guisantes
 6,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4102,7 +4018,6 @@ JEERA RICE
 +
 NAAN
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4153,7 +4068,6 @@ Pan con cebolla picada
 4,10€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4204,7 +4118,6 @@ Pan con ajo y chili
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4256,7 +4169,6 @@ Pan fino con matequilla
 3,20€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4304,7 +4216,6 @@ Pan relleno con cebolloas, coliflor y mantequilla
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4352,7 +4263,6 @@ Curry aromático dulce con mango en dado y puré
 16,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4403,7 +4313,6 @@ PATATAS FRITAS
 4,25€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4452,7 +4361,6 @@ A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4501,7 +4409,6 @@ CUBOS DE SOJA ASADOS AL TANDOOR CON RICA SALSA MASALA A ELEGIR CON: ARROZ BASMAT
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4549,7 +4456,6 @@ HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4594,7 +4500,6 @@ Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4612,9 +4517,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MIXED KULFI
-5,50€
-+
 BOLAS DE HARINA Y LECHE FRITAS EN ALMIBAR
 5,00€
 +
@@ -4642,7 +4544,6 @@ FERRERO SIN AZUCAR
 +
 BEBIDAS SIN ALCOHOL
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4685,7 +4586,6 @@ FANTA LIMÓN 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4728,7 +4628,6 @@ MINUTE MAID MANZANA
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4775,7 +4674,6 @@ CERVEZA KINGFISHER
 4,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4793,9 +4691,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-PINEAPPLE JUICE
-3,00€
-+
 MANGO JUICE
 3,00€
 +
@@ -4819,7 +4714,6 @@ VINO DE LA CASA BLANCA
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4862,7 +4756,6 @@ CAMPUSTAURO (RIBERA DEL DUERO, ROBLE)
 28,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4905,7 +4798,6 @@ PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4948,7 +4840,6 @@ CAMPUSTAURO ROSE
 20,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -4966,9 +4857,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-VIÑA SOL
-22,00€
-+
 FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
@@ -4992,7 +4880,6 @@ TARJETA REGALO 80€
 80,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5033,7 +4920,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 ACOMPAÑANTES
 keyboard_arrow_left
 menu
@@ -5086,7 +4972,6 @@ Champiñones cocinados en una salsa suave de tomate con cebolla picada y especia
 9,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5138,7 +5023,6 @@ desde
 12,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5194,7 +5078,6 @@ desde
 18,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5246,7 +5129,6 @@ Arroz basmati indio blanco con su sabor natural
 4,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5294,7 +5176,6 @@ Arroz basmati con huevo picante y guisantes
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5345,7 +5226,6 @@ Arroz basmati enriquecido con dulce de coco color naranja
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5392,7 +5272,6 @@ Pan relleno de coco, sultanas y azucar
 4,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5443,7 +5322,6 @@ Pan con relleno de queso gouda
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5495,7 +5373,6 @@ Pan con ajo y queso
 +
 CHAPATIS Y PARATHAS
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5551,7 +5428,6 @@ Pan fino relleno de papas guisadas y mantequilla
 4,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5603,7 +5479,6 @@ Un plato especial del sur de la India con un toque mas asiatico al usar salsa de
 16,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5651,7 +5526,6 @@ CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULC
 16,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5696,7 +5570,6 @@ FISH FINGERS AND CHIPS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5744,7 +5617,6 @@ Queso indio fresco con guisantes verdes especiados A ELEGIR CON: ARROZ BASMATI, 
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5762,10 +5634,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-KORMA DE POLLO AL AZAFRÁN
-A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
-7,90€
-+
 POLLO CHASNEY
 A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
@@ -5793,11 +5661,7 @@ POSTRES
 HELADO HINDÚ DE PISTACHO
 5,50€
 +
-HELADO HINDÚ DE MANGO
-5,50€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5842,7 +5706,6 @@ ARROZ CON LECHE CASERO AL ESTILO HINDÚ
 4,75€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5892,7 +5755,6 @@ FERRERO SIN AZUCAR
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5936,7 +5798,6 @@ FANTA NARANJA 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -5954,6 +5815,7 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+BEBIDAS SIN ALCOHOL
 COCA COLA 2 LITROS
 5,00€
 +
@@ -5975,11 +5837,7 @@ APPLETISER
 MINUTE MAID NARANJA
 3,00€
 +
-MINUTE MAID MELOCOTÓN
-3,00€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6020,7 +5878,6 @@ MANGO JUICE
 +
 BEBIDAS CON ALCOHOL
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6064,7 +5921,6 @@ SIDRA KOPPERBERG 50CL
 4,25€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6107,7 +5963,6 @@ VAL ARANDA (RIBERA DEL DUERO JOVEN)
 22,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6150,7 +6005,6 @@ TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6193,7 +6047,6 @@ MATEUS ROSE
 18,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6240,7 +6093,6 @@ TARJETA REGALO 60€
 60,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6281,7 +6133,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 SIZZLERS
 keyboard_arrow_left
 menu
@@ -6336,7 +6187,6 @@ Arroz Biryani cocinado por separado con una salsa de sabor intenso. Se servirá 
 desde
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6354,6 +6204,16 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CHICKEN TANDOORI SIZZLER
+Muslos de Pollo con hueso marinado en yogur rojo especiado, cocinado en horno de barro. Se sirve con cebolla frita y limón
+desde
+12,90€
++
+KING PRAWN SIZZLER
+Langostinos cocinados en sarten con especias y cebollas, con un sabor que no podrás olvidar
+desde
+16,90€
++
 TANDOORI MIX GRILL
 Combinacion de Cordero, sheekh kebab, Pollo Tikka, Muslos de pollo y Langostinos
 desde
@@ -6381,12 +6241,7 @@ ARROZ CON VERDURAS
 Arroz basmati con verduras
 5,40€
 +
-MUSHROOM RICE
-Arroz basmati con champiñones
-5,40€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6437,7 +6292,6 @@ Arroz basmati Bombay Babu especial con verduras y gambas
 6,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6484,7 +6338,6 @@ JEERA RICE
 +
 NAAN
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6531,7 +6384,6 @@ Pan con cebolla picada
 4,10€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6582,7 +6434,6 @@ Pan con ajo y chili
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6630,7 +6481,6 @@ Pan fino con matequilla
 3,20€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6679,7 +6529,6 @@ Pan relleno con cebolloas, coliflor y mantequilla
 +
 ESPECIALES DEL CHEF
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6731,7 +6580,6 @@ Carne picada con guisantes al curry servidos en una espesa mezcla picante
 15,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6782,7 +6630,6 @@ PATATAS FRITAS
 4,25€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6831,7 +6678,6 @@ A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6880,7 +6726,6 @@ CUBOS DE SOJA ASADOS AL TANDOOR CON RICA SALSA MASALA A ELEGIR CON: ARROZ BASMAT
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6898,10 +6743,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-POLLO KASHMIRI KORMA
-A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
-7,90€
-+
 DHAL MAKHNI
 Lentejas cocinadas en una sopa espesa con especias servido con mantequila natural. A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
@@ -6928,7 +6769,6 @@ HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -6946,10 +6786,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-CHICKEN TIKKA MASALA (KIDS)
-7,90€
-+
-POSTRES
 HELADO HINDÚ DE PISTACHO
 5,50€
 +
@@ -6972,8 +6808,11 @@ DOS CHOCOLATES/MARACUYA
 Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
 +
+CHEESECAKE DE COCO CON MANGO
+Nata, coco, crujiente de coco, frutas de mango, bizcocho
+5,95€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7018,7 +6857,6 @@ FERRERO SIN AZUCAR
 +
 BEBIDAS SIN ALCOHOL
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7064,7 +6902,6 @@ SPRITE 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7107,7 +6944,6 @@ MINUTE MAID MANZANA
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7125,12 +6961,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-SPRITE 2 LITROS
-5,00€
-+
-APPLETISER
-3,20€
-+
 MINUTE MAID NARANJA
 3,00€
 +
@@ -7154,7 +6984,6 @@ CERVEZA KINGFISHER
 4,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7195,7 +7024,6 @@ VINO DE LA CASA BLANCA
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7238,7 +7066,6 @@ LUIS GURPEGUI MUGA CRIANZA (RIBERA DEL DUERO, CRIANZA)
 26,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7281,7 +7108,6 @@ PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7299,9 +7125,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MARQUÉS DE CÁCERES (TINTO RIOJA, CRIANZA)
-24,90€
-+
 TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
@@ -7323,8 +7146,8 @@ MATEUS ROSE
 CAMPUSTAURO ROSE
 20,00€
 +
+TARJETA REGALO
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7342,9 +7165,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-VIÑA SOL
-22,00€
-+
 FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
@@ -7368,7 +7188,6 @@ TARJETA REGALO 80€
 80,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7409,7 +7228,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 BIRYANI
 keyboard_arrow_left
 menu
@@ -7463,7 +7281,6 @@ Arroz basmati con huevo picante y guisantes
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7514,7 +7331,6 @@ Arroz basmati enriquecido con dulce de coco color naranja
 5,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7569,7 +7385,6 @@ Pan relleno de coco, sultanas y azucar
 4,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7587,13 +7402,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-COCONUT RICE
-Arroz basmati enriquecido con dulce de coco color naranja
-5,90€
-+
-JEERA RICE
-5,40€
-+
 NAAN
 PLAIN NAAN
 Pan normal sin matequilla
@@ -7624,7 +7432,6 @@ Pan con relleno de carne molida
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7674,8 +7481,8 @@ CHEESE & GARLIC NAAN
 Pan con ajo y queso
 5,40€
 +
+CHAPATIS Y PARATHAS
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7723,7 +7530,6 @@ Pan fino ligeramente más gorda que el chapati
 3,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7771,7 +7577,6 @@ Un plato vegetariano indio popular hecho de paneer y papas sumergidas en una sal
 15,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7827,7 +7632,6 @@ CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULC
 16,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7880,7 +7684,6 @@ FISH FINGERS AND CHIPS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7933,7 +7736,6 @@ Lentejas cocinadas en una sopa espesa con especias servido con mantequila natura
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -7979,8 +7781,10 @@ CHICKEN TIKKA MASALA (KIDS)
 7,90€
 +
 POSTRES
+HELADO HINDÚ DE PISTACHO
+5,50€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8022,7 +7826,6 @@ BOLAS DE HARINA Y LECHE FRITAS EN ALMIBAR
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8040,9 +7843,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-HELADO HINDÚ DE MANGO
-5,50€
-+
 HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
@@ -8067,8 +7867,14 @@ CHEESECAKE CLASSIC
 Nata, crema queso, mermelada de arándanos, galleta
 5,95€
 +
+KINDER CAKE
+EL FAVORITO DE LOS NIÑOS!! Nata, crema de Kinder, crujiente de Kinder, bizcocho.
+5,95€
++
+FERRERO SIN AZUCAR
+5,95€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8086,6 +7892,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+ARROZ CON LECHE CASERO AL ESTILO HINDÚ
+4,75€
++
 DOS CHOCOLATES/MARACUYA
 Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
@@ -8112,8 +7921,10 @@ COCA COLA 2 LITROS
 COCA COLA LIGHT 2 LITROS
 5,00€
 +
+FANTA NARANJA 2 LITROS
+5,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8157,7 +7968,6 @@ MINUTE MAID NARANJA
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8200,7 +8010,6 @@ MANGO JUICE
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8218,12 +8027,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MINUTE MAID NARANJA
-3,00€
-+
-MINUTE MAID MELOCOTÓN
-3,00€
-+
 MINUTE MAID MANZANA
 3,00€
 +
@@ -8247,7 +8050,6 @@ SIDRA STRONGBOW
 3,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8265,9 +8067,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-CERVEZA COBRA
-4,00€
-+
 CERVEZA KINGFISHER
 4,00€
 +
@@ -8289,8 +8088,10 @@ VINO DE LA CASA ROSADO
 VINO TINTO DE LA CASA
 18,00€
 +
+VAL ARANDA (RIBERA DEL DUERO JOVEN)
+22,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8333,7 +8134,6 @@ TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8376,7 +8176,6 @@ FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8394,9 +8193,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-TAJINASTE BLANCO SECO
-27,00€
-+
 PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
@@ -8420,7 +8216,6 @@ TARJETA REGALO 40€
 40,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8461,7 +8256,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 ARROZ
 keyboard_arrow_left
 menu
@@ -8480,6 +8274,10 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+BIRYANI
+Arroz Biryani cocinado por separado con una salsa de sabor intenso. Se servirá una salsa medianamente espesa por separado.
+desde
++
 ARROZ
 ARROZ PILAU
 Arroz basmati indio de tres colores con cebolla, canela, clavo y hierbas
@@ -8505,12 +8303,7 @@ ARROZ ESPECIAL
 Arroz basmati con huevo picante y guisantes
 5,90€
 +
-KEEMA RICE
-Arroz basmati con carne molida y guisantes
-6,40€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8560,7 +8353,6 @@ JEERA RICE
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8607,7 +8399,6 @@ Pan con pimientos verdes y chili
 4,10€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8625,10 +8416,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-PLAIN NAAN
-Pan normal sin matequilla
-4,00€
-+
 GARLIC NAAN
 Pan con ajo
 4,50€
@@ -8657,8 +8444,11 @@ CHEESE NAAN
 Pan con relleno de queso gouda
 4,90€
 +
+GARLIC CHILLI NAAN
+Pan con ajo y chili
+5,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8710,7 +8500,6 @@ Pan fino con matequilla
 3,20€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8766,7 +8555,6 @@ Pan relleno con cebolloas, coliflor y mantequilla
 4,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8822,7 +8610,6 @@ Curry aromático dulce con mango en dado y puré
 16,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8873,7 +8660,6 @@ NOODLES AL ESTILO INDIO-CHINO SALTEADOS EN WOK CON ESPECIAS Y VERDURAS DE LA IND
 15,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8918,7 +8704,6 @@ A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -8966,7 +8751,6 @@ Queso indio fresco con guisantes verdes especiados A ELEGIR CON: ARROZ BASMATI, 
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9014,7 +8798,6 @@ HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9059,7 +8842,6 @@ Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9106,7 +8888,6 @@ FERRERO SIN AZUCAR
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9153,7 +8934,6 @@ FANTA LIMÓN 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9196,7 +8976,6 @@ MINUTE MAID MELOCOTÓN
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9237,7 +9016,6 @@ CERVEZA COBRA
 4,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9277,8 +9055,10 @@ SIDRA STRONGBOW
 SIDRA KOPPERBERG 50CL
 4,25€
 +
+VINO DE LA CASA BLANCA
+18,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9321,7 +9101,6 @@ CAMPUSTAURO (RIBERA DEL DUERO, ROBLE)
 28,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9364,7 +9143,6 @@ TAJINASTE BLANCO SECO
 27,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9382,9 +9160,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-LUIS GURPEGUI MUGA CRIANZA (RIBERA DEL DUERO, CRIANZA)
-26,90€
-+
 MARQUÉS DE CÁCERES (TINTO RIOJA, CRIANZA)
 24,90€
 +
@@ -9406,8 +9181,10 @@ FAMARA (VINO BLANCO SECO DE LANZAROTE)
 MATEUS ROSE
 18,50€
 +
+CAMPUSTAURO ROSE
+20,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9447,8 +9224,10 @@ TARJETA REGALO 40€
 TARJETA REGALO 60€
 60,00€
 +
+TARJETA REGALO 80€
+80,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9489,7 +9268,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 NAAN
 keyboard_arrow_left
 menu
@@ -9508,6 +9286,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+JEERA RICE
+5,40€
++
 NAAN
 PLAIN NAAN
 Pan normal sin matequilla
@@ -9533,12 +9314,7 @@ CHILLI CORIANDER NAAN
 Pan con cilantro y chili
 4,30€
 +
-KEEMA NAAN
-Pan con relleno de carne molida
-4,90€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9589,7 +9365,6 @@ Pan con ajo y queso
 5,40€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9607,6 +9382,10 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CHEESE NAAN
+Pan con relleno de queso gouda
+4,90€
++
 GARLIC CHILLI NAAN
 Pan con ajo y chili
 5,00€
@@ -9636,8 +9415,11 @@ PLAIN PARATHA
 Pan fino ligeramente más gorda que el chapati
 3,90€
 +
+ALOO PARATHA
+Pan fino relleno de papas guisadas y mantequilla
+4,50€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9684,8 +9466,11 @@ MALAI KOFTA
 Un plato vegetariano indio popular hecho de paneer y papas sumergidas en una salsa suave y rica
 15,90€
 +
+CHILI CHICKEN
+Un plato especial del sur de la India con un toque mas asiatico al usar salsa de soja marinada con chiles verdes
+16,50€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9741,7 +9526,6 @@ CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULC
 16,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9794,7 +9578,6 @@ FISH FINGERS AND CHIPS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9812,10 +9595,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-CHILLI PANEER
-CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULCE PICANTE
-16,90€
-+
 HAKKA NOODLES
 NOODLES AL ESTILO INDIO-CHINO SALTEADOS EN WOK CON ESPECIAS Y VERDURAS DE LA INDIA
 15,90€
@@ -9842,12 +9621,7 @@ POLLO KASHMIRI KORMA
 A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
 +
-DHAL MAKHNI
-Lentejas cocinadas en una sopa espesa con especias servido con mantequila natural. A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
-7,90€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9865,10 +9639,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-KORMA DE POLLO AL AZAFRÁN
-A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
-7,90€
-+
 POLLO CHASNEY
 A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
@@ -9897,7 +9667,6 @@ HELADO HINDÚ DE PISTACHO
 5,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9939,7 +9708,6 @@ BOLAS DE HARINA Y LECHE FRITAS EN ALMIBAR
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -9957,6 +9725,12 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+HELADO HINDÚ DE PISTACHO
+5,50€
++
+HELADO HINDÚ DE MANGO
+5,50€
++
 HELADO HINDÚ DE DULCE DE LECHE
 5,50€
 +
@@ -9985,11 +9759,7 @@ KINDER CAKE
 EL FAVORITO DE LOS NIÑOS!! Nata, crema de Kinder, crujiente de Kinder, bizcocho.
 5,95€
 +
-FERRERO SIN AZUCAR
-5,95€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10007,6 +9777,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+ARROZ CON LECHE CASERO AL ESTILO HINDÚ
+4,75€
++
 DOS CHOCOLATES/MARACUYA
 Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
@@ -10033,8 +9806,10 @@ COCA COLA 2 LITROS
 COCA COLA LIGHT 2 LITROS
 5,00€
 +
+FANTA NARANJA 2 LITROS
+5,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10078,7 +9853,6 @@ MINUTE MAID NARANJA
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10121,7 +9895,6 @@ MANGO JUICE
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10162,7 +9935,6 @@ SIDRA STRONGBOW
 3,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10205,7 +9977,6 @@ VINO TINTO DE LA CASA
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10248,7 +10019,6 @@ TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10291,7 +10061,6 @@ FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10309,6 +10078,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+TAJINASTE BLANCO SECO
+27,00€
++
 PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
@@ -10332,7 +10104,6 @@ TARJETA REGALO 40€
 40,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10373,7 +10144,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 CHAPATIS Y PARATHAS
 keyboard_arrow_left
 menu
@@ -10393,7 +10163,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10412,7 +10181,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 ESPECIALES DEL CHEF
 keyboard_arrow_left
 menu
@@ -10461,7 +10229,6 @@ CRUJIENTE PANEER REBOZADO Y FRITO MEZCLADO CON SALSA DE CHILE PICANTE Y AGRIDULC
 16,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10479,6 +10246,14 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CHILI CHICKEN
+Un plato especial del sur de la India con un toque mas asiatico al usar salsa de soja marinada con chiles verdes
+16,50€
++
+MANGO CHICKEN
+Curry aromático dulce con mango en dado y puré
+16,50€
++
 KEEMA MUTTER MASALA
 Carne picada con guisantes al curry servidos en una espesa mezcla picante
 15,90€
@@ -10506,7 +10281,6 @@ FISH FINGERS AND CHIPS
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10551,7 +10325,6 @@ Lentejas cocinadas en una sopa espesa con especias servido con mantequila natura
 7,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10569,10 +10342,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-KORMA DE POLLO AL AZAFRÁN
-A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
-7,90€
-+
 POLLO CHASNEY
 A ELEGIR CON: ARROZ BASMATI, NAAN Ó PAPAS FRITAS
 7,90€
@@ -10600,11 +10369,7 @@ POSTRES
 HELADO HINDÚ DE PISTACHO
 5,50€
 +
-HELADO HINDÚ DE MANGO
-5,50€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10649,7 +10414,6 @@ ARROZ CON LECHE CASERO AL ESTILO HINDÚ
 4,75€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10699,7 +10463,6 @@ FERRERO SIN AZUCAR
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10750,7 +10513,6 @@ FANTA NARANJA 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10791,7 +10553,6 @@ MINUTE MAID NARANJA
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10809,9 +10570,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-FANTA LIMÓN 2 LITROS
-5,00€
-+
 SPRITE 2 LITROS
 5,00€
 +
@@ -10833,8 +10591,8 @@ PINEAPPLE JUICE
 MANGO JUICE
 3,00€
 +
+BEBIDAS CON ALCOHOL
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10878,7 +10636,6 @@ SIDRA KOPPERBERG 50CL
 4,25€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10921,7 +10678,6 @@ VAL ARANDA (RIBERA DEL DUERO JOVEN)
 22,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -10964,7 +10720,6 @@ TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11007,7 +10762,6 @@ MATEUS ROSE
 18,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11025,6 +10779,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+TAJINASTE BLANCO SECO
+27,00€
++
 PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
@@ -11047,8 +10804,10 @@ TARJETA REGALO 20€
 TARJETA REGALO 40€
 40,00€
 +
+TARJETA REGALO 60€
+60,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11089,7 +10848,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 MENU INFANTIL
 keyboard_arrow_left
 menu
@@ -11109,7 +10867,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11128,7 +10885,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 POSTRES
 keyboard_arrow_left
 menu
@@ -11174,7 +10930,6 @@ Chocolate blanco, chocolate con leche y salsa de maracuyá, bizcocho
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11221,7 +10976,6 @@ FERRERO SIN AZUCAR
 5,95€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11264,7 +11018,6 @@ FANTA LIMÓN 2 LITROS
 5,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11307,7 +11060,6 @@ MINUTE MAID MELOCOTÓN
 3,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11325,9 +11077,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-SPRITE 2 LITROS
-5,00€
-+
 APPLETISER
 3,20€
 +
@@ -11350,11 +11099,7 @@ BEBIDAS CON ALCOHOL
 CERVEZA COBRA
 4,00€
 +
-CERVEZA KINGFISHER
-4,00€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11398,7 +11143,6 @@ VINO DE LA CASA BLANCA
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11416,6 +11160,9 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
+CERVEZA KINGFISHER
+4,00€
++
 HEINEKEN
 3,50€
 +
@@ -11437,11 +11184,7 @@ VINO TINTO DE LA CASA
 VAL ARANDA (RIBERA DEL DUERO JOVEN)
 22,00€
 +
-CAMPUSTAURO (RIBERA DEL DUERO, ROBLE)
-28,00€
-+
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11484,7 +11227,6 @@ TAJINASTE BLANCO SECO
 27,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11527,7 +11269,6 @@ MATEUS ROSE
 18,50€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11574,7 +11315,6 @@ TARJETA REGALO 60€
 60,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11615,7 +11355,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 BEBIDAS SIN ALCOHOL
 keyboard_arrow_left
 menu
@@ -11635,7 +11374,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11654,7 +11392,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 BEBIDAS CON ALCOHOL
 keyboard_arrow_left
 menu
@@ -11696,7 +11433,6 @@ VINO DE LA CASA ROSADO
 18,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11739,7 +11475,6 @@ LUIS GURPEGUI MUGA CRIANZA (RIBERA DEL DUERO, CRIANZA)
 26,90€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11782,7 +11517,6 @@ PLUMA BLANCA (VINO BLANCO DE RUEDA)
 20,00€
 +
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11800,9 +11534,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-MARQUÉS DE CÁCERES (TINTO RIOJA, CRIANZA)
-24,90€
-+
 TAJINASTE (VINO TINTO CANARIO)
 31,90€
 +
@@ -11824,8 +11555,8 @@ MATEUS ROSE
 CAMPUSTAURO ROSE
 20,00€
 +
+TARJETA REGALO
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11843,9 +11574,6 @@ POSTRES
 BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
-VIÑA SOL
-22,00€
-+
 FAMARA (VINO BLANCO SECO DE LANZAROTE)
 23,70€
 +
@@ -11868,8 +11596,10 @@ TARJETA REGALO 60€
 TARJETA REGALO 80€
 80,00€
 +
+TARJETA REGALO 100€
+100,00€
++
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11910,7 +11640,6 @@ TARJETA REGALO 100€
 100,00€
 +
 more_vert
-SEP. 2026
 TARJETA REGALO
 keyboard_arrow_left
 menu
@@ -11930,7 +11659,6 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
 keyboard_arrow_left
 menu
 APERITIVOS
@@ -11949,4 +11677,3 @@ BEBIDAS SIN ALCOHOL
 BEBIDAS CON ALCOHOL
 TARJETA REGALO
 more_vert
-SEP. 2026
